@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "stage": "local-first-version-implemented",
+  "implementation": {
+    "siteDirectory": "site",
+    "buildDirectory": "dist",
+    "deployment": "not-deployed",
+    "devCommand": "npm run dev",
+    "buildCommand": "npm run build",
+    "previewCommand": "npm run preview",
+    "defaultLocalUrl": "http://127.0.0.1:4317/",
+    "coolNouveauImages": {
+      "status": "approved-embedded-visuals-implemented",
+      "sourcePage": 24,
+      "assetPaths": ["site/assets/images/cool-1.webp", "site/assets/images/cool-2.webp", "site/assets/images/cool-3.webp", "site/assets/images/cool-4.webp", "site/assets/images/cool-5.webp", "site/assets/images/cool-6.webp"],
+      "provenanceManifest": ".source/web-assets-manifest.json"
+    }
+  },
+  "language": "en",
+  "source": {
+    "affinityPackage": "2026 architrekt research practise.afpackage",
+    "currentExport": ".source/portfolio/2026 architrekt research practise.pdf",
+    "pageCount": 40,
+    "imageArchive": "Images.zip",
+    "fontArchive": "Fonts.zip"
+  },
+  "landing": {
+    "path": "/",
+    "sourcePages": [1],
+    "name": "Mária Novotná",
+    "draftCopy": {
+      "status": "editable-draft-implemented-authorized-by-user",
+      "heading": "Architecture, research & landscapes.",
+      "introduction": "A selection of research into mountain architecture and tourism, alongside exhibitions, collaborative projects and public-space design."
+    }
+  },
+  "flagship": {
+    "id": "history-of-mountain-hut-architecture",
+    "title": "History of Mountain Hut Architecture",
+    "projectAffiliationLine": "Mountain Solitudes / FAD / Innovation in architecture of 20th century in Slovakia",
+    "presentation": "dedicated-project-page",
+    "path": "/projects/history-of-mountain-hut-architecture/",
+    "sourcePages": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 23, 39, 40],
+    "chapters": [
+      { "id": "overview", "label": "Research overview", "sourcePages": [2] },
+      { "id": "history-and-mapping", "label": "History, mapping and periodisation", "sourcePages": [3, 4, 5, 6, 39, 40] },
+      { "id": "tery-hut", "label": "Téry Hut", "sourcePages": [7, 8, 9, 10] },
+      { "id": "contemporary-reflections", "label": "Contemporary Reflections", "sourcePages": [11, 12, 13], "titleNote": "Source also uses Contemporary Reflexions." },
+      { "id": "architecture-in-the-mountains", "label": "Architecture in the Mountains", "sourcePages": [14, 15, 16, 17] },
+      { "id": "reflection-on-architecture", "label": "Reflections on Architecture", "sourceTitle": "Reflection on Architecture", "sourcePages": [23], "placement": "Related work, grouped under the main project by explicit user decision." }
+    ],
+    "figureReviewPages": [4, 8, 40]
+  },
+  "selectedProjects": [
+    {
+      "id": "the-valley",
+      "order": 1,
+      "title": "The Valley",
+      "projectAffiliationLine": "FAD / SAV / Pre Dolinu / Fulbright visiting research",
+      "sourcePages": [18, 19, 20, 21],
+      "proposedFuturePath": "/projects/the-valley/",
+      "detailPath": null,
+      "sections": ["Research overview", "Held Captive by the Tourism Industry", "Taming of the wild", "Jasná"]
+    },
+    {
+      "id": "modernism-revisited-2026",
+      "order": 2,
+      "title": "Modernism Revisited 2026",
+      "sourcePages": [22],
+      "proposedFuturePath": "/projects/modernism-revisited-2026/",
+      "detailPath": null
+    },
+    {
+      "id": "cool-nouveau",
+      "order": 3,
+      "title": "COOL Nouveau",
+      "sourcePages": [24],
+      "proposedFuturePath": "/projects/cool-nouveau/",
+      "detailPath": null
+    },
+    {
+      "id": "visitors-centre-demanovska-dolina",
+      "order": 4,
+      "title": "Visitors centre Demänovská dolina",
+      "sourcePages": [25],
+      "proposedFuturePath": "/projects/visitors-centre-demanovska-dolina/",
+      "detailPath": null
+    },
+    {
+      "id": "revitalization-of-a-public-square",
+      "order": 5,
+      "title": "Revitalization of a public square",
+      "sourcePages": [26],
+      "proposedFuturePath": "/projects/revitalization-of-a-public-square/",
+      "detailPath": null
+    }
+  ],
+  "reservedSourcePages": [28, 29, 30, 31, 32, 33, 34, 35, 37, 38],
+  "separatorSourcePages": [27, 36],
+  "pendingDecisions": []
+}

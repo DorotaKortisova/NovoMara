@@ -1,0 +1,1196 @@
+{
+  "portfolio_reference": ".source/portfolio/2026 architrekt research practise.pdf",
+  "method": "Bounded visual comparison of original archive previews and current 40-page PDF renders. Confirmed means a distinctive visual match; no claim of original binary identity. Candidates are kept separate from verified page associations.",
+  "scope_notes": [
+    "Page 23 Reflection on Architecture belongs to the flagship project by user instruction.",
+    "Pages 28–35 remain reserve projects outside the first version.",
+    "Pages 37–38 Alps/Rockies and USA research remain separate and outside the first version by user instruction.",
+    "No portfolio PDF image is substituted for an archive original without approval; user specifically approved the six COOL Nouveau page-24 embedded visuals."
+  ],
+  "original_asset_count": 63,
+  "assets": [
+    {
+      "source_id": 1,
+      "archive_filename": "Images/uvod.jpg",
+      "filename": "uvod.jpg",
+      "source_relative_path": ".source/images/uvod.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 27676738,
+      "width_pixels": 5184,
+      "height_pixels": 3456,
+      "verified_portfolio_pages": [
+        17
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Architectural collage matches the upper-right image on page 17; possible landing image by later design choice."
+    },
+    {
+      "source_id": 2,
+      "archive_filename": "Images/dnes.jpg",
+      "filename": "dnes.jpg",
+      "source_relative_path": ".source/images/dnes.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 2186783,
+      "width_pixels": 3109,
+      "height_pixels": 1593,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        4
+      ],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Archive hut-location map is related to page 4, but the exported map uses a different visible overlay."
+    },
+    {
+      "source_id": 3,
+      "archive_filename": "Images/fig06.jpg",
+      "filename": "fig06.jpg",
+      "source_relative_path": ".source/images/fig06.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 11935249,
+      "width_pixels": 5202,
+      "height_pixels": 3464,
+      "verified_portfolio_pages": [
+        12
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Mountain photograph matches the right-hand photograph on page 12."
+    },
+    {
+      "source_id": 4,
+      "archive_filename": "Images/fig05.jpg",
+      "filename": "fig05.jpg",
+      "source_relative_path": ".source/images/fig05.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 14156050,
+      "width_pixels": 3464,
+      "height_pixels": 5202,
+      "verified_portfolio_pages": [
+        11
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Small hut photograph matches the left-hand photograph on page 11."
+    },
+    {
+      "source_id": 5,
+      "archive_filename": "Images/obr_1.jpg",
+      "filename": "obr_1.jpg",
+      "source_relative_path": ".source/images/obr_1.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 144300,
+      "width_pixels": 1000,
+      "height_pixels": 500,
+      "verified_portfolio_pages": [
+        18
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Valley landscape matches the right image in the page 18 triptych."
+    },
+    {
+      "source_id": 6,
+      "archive_filename": "Images/575701.jpg",
+      "filename": "575701.jpg",
+      "source_relative_path": ".source/images/575701.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 667773,
+      "width_pixels": 1289,
+      "height_pixels": 1297,
+      "verified_portfolio_pages": [
+        17
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Historical scaffold photograph matches the lower-left image on page 17."
+    },
+    {
+      "source_id": 7,
+      "archive_filename": "Images/axo iba.pdf",
+      "filename": "axo iba.pdf",
+      "source_relative_path": ".source/images/axo iba.pdf",
+      "actual_format": "PDF",
+      "size_bytes": 303606,
+      "width_pixels": null,
+      "height_pixels": null,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        7
+      ],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Single black axonometric hut model is related to the page 7 model comparison; direct placement cannot be verified."
+    },
+    {
+      "source_id": 8,
+      "archive_filename": "Images/31-2_low.jpg",
+      "filename": "31-2_low.jpg",
+      "source_relative_path": ".source/images/31-2_low.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 3446077,
+      "width_pixels": 3543,
+      "height_pixels": 5062,
+      "verified_portfolio_pages": [
+        25
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "visitors-centre-demanovska-dolina",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Page 25 uses cropped portions of this competition board, including the exterior rendering."
+    },
+    {
+      "source_id": 9,
+      "archive_filename": "Images/31-1_low.jpg",
+      "filename": "31-1_low.jpg",
+      "source_relative_path": ".source/images/31-1_low.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 3957833,
+      "width_pixels": 3543,
+      "height_pixels": 5062,
+      "verified_portfolio_pages": [
+        25
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "visitors-centre-demanovska-dolina",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Page 25 uses cropped portions of this competition board, including the site plan and axonometric."
+    },
+    {
+      "source_id": 10,
+      "archive_filename": "Images/podorysy.pdf",
+      "filename": "podorysy.pdf",
+      "source_relative_path": ".source/images/podorysy.pdf",
+      "actual_format": "PDF",
+      "size_bytes": 6690687,
+      "width_pixels": null,
+      "height_pixels": null,
+      "verified_portfolio_pages": [
+        13
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Floor-plan geometry matches the lower-right floor plan on page 13; source is rotated in the layout."
+    },
+    {
+      "source_id": 11,
+      "archive_filename": "Images/_MG_4295.jpg",
+      "filename": "_MG_4295.jpg",
+      "source_relative_path": ".source/images/_MG_4295.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 9333182,
+      "width_pixels": 3906,
+      "height_pixels": 2602,
+      "verified_portfolio_pages": [
+        37
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "reserve-alps-rockies-and-usa-research",
+      "status": "confirmed",
+      "first_version_scope": "reserve",
+      "evidence": "Photograph matches the upper-left image on page 37. User excluded pages 37–38 from the first version."
+    },
+    {
+      "source_id": 12,
+      "archive_filename": "Images/IMG_0068.jpg",
+      "filename": "IMG_0068.jpg",
+      "source_relative_path": ".source/images/IMG_0068.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 6748315,
+      "width_pixels": 5616,
+      "height_pixels": 3744,
+      "verified_portfolio_pages": [
+        21
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Photograph matches the lower-left image on page 21."
+    },
+    {
+      "source_id": 13,
+      "archive_filename": "Images/IMG_0247.jpg",
+      "filename": "IMG_0247.jpg",
+      "source_relative_path": ".source/images/IMG_0247.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 329160,
+      "width_pixels": 2500,
+      "height_pixels": 1642,
+      "verified_portfolio_pages": [
+        22
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "modernism-revisited-2026",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Panel-discussion photograph matches the upper-right image on page 22."
+    },
+    {
+      "source_id": 14,
+      "archive_filename": "Images/_MG_4657.jpg",
+      "filename": "_MG_4657.jpg",
+      "source_relative_path": ".source/images/_MG_4657.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 10404847,
+      "width_pixels": 3906,
+      "height_pixels": 2602,
+      "verified_portfolio_pages": [
+        37
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "reserve-alps-rockies-and-usa-research",
+      "status": "confirmed",
+      "first_version_scope": "reserve",
+      "evidence": "Photograph matches the lower-left image on page 37. User excluded pages 37–38 from the first version."
+    },
+    {
+      "source_id": 15,
+      "archive_filename": "Images/IMG_3888.HEIC",
+      "filename": "IMG_3888.HEIC",
+      "source_relative_path": ".source/images/IMG_3888.HEIC",
+      "actual_format": "JPEG",
+      "size_bytes": 2772126,
+      "width_pixels": 3024,
+      "height_pixels": 4032,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": null,
+      "status": "unassigned",
+      "first_version_scope": "unassigned",
+      "evidence": "No strong visual match found in the current 40-page export."
+    },
+    {
+      "source_id": 16,
+      "archive_filename": "Images/IMG_4013.HEIC",
+      "filename": "IMG_4013.HEIC",
+      "source_relative_path": ".source/images/IMG_4013.HEIC",
+      "actual_format": "JPEG",
+      "size_bytes": 1130361,
+      "width_pixels": 3024,
+      "height_pixels": 4032,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": null,
+      "status": "unassigned",
+      "first_version_scope": "unassigned",
+      "evidence": "No strong visual match found in the current 40-page export."
+    },
+    {
+      "source_id": 17,
+      "archive_filename": "Images/IMG_4044.HEIC",
+      "filename": "IMG_4044.HEIC",
+      "source_relative_path": ".source/images/IMG_4044.HEIC",
+      "actual_format": "JPEG",
+      "size_bytes": 871360,
+      "width_pixels": 3024,
+      "height_pixels": 4032,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "reserve-alps-rockies-and-usa-research",
+      "status": "candidate",
+      "first_version_scope": "reserve",
+      "evidence": "Photograph visibly contains Jackson Hole lettering, but no strong match appears on pages 37–38; kept outside the first version."
+    },
+    {
+      "source_id": 18,
+      "archive_filename": "Images/mnm styly.jpg",
+      "filename": "mnm styly.jpg",
+      "source_relative_path": ".source/images/mnm styly.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 5335798,
+      "width_pixels": 2481,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        5
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Periodisation composite matches the left image on page 5."
+    },
+    {
+      "source_id": 19,
+      "archive_filename": "Images/IMG_4502.HEIC",
+      "filename": "IMG_4502.HEIC",
+      "source_relative_path": ".source/images/IMG_4502.HEIC",
+      "actual_format": "JPEG",
+      "size_bytes": 2458939,
+      "width_pixels": 3024,
+      "height_pixels": 4032,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": null,
+      "status": "unassigned",
+      "first_version_scope": "unassigned",
+      "evidence": "No strong visual match found in the current 40-page export."
+    },
+    {
+      "source_id": 20,
+      "archive_filename": "Images/IMG_3063.HEIC",
+      "filename": "IMG_3063.HEIC",
+      "source_relative_path": ".source/images/IMG_3063.HEIC",
+      "actual_format": "HEIF",
+      "size_bytes": 601217,
+      "width_pixels": 3024,
+      "height_pixels": 4032,
+      "verified_portfolio_pages": [
+        37
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "reserve-alps-rockies-and-usa-research",
+      "status": "confirmed",
+      "first_version_scope": "reserve",
+      "evidence": "ALL TREES CLOSED photograph matches the right-hand image on page 37. User excluded pages 37–38 from the first version."
+    },
+    {
+      "source_id": 21,
+      "archive_filename": "Images/axo spolu.jpg",
+      "filename": "axo spolu.jpg",
+      "source_relative_path": ".source/images/axo spolu.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 685195,
+      "width_pixels": 2481,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        7
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Nine-model black axonometric comparison matches page 7."
+    },
+    {
+      "source_id": 22,
+      "archive_filename": "Images/IMG_3448.HEIC",
+      "filename": "IMG_3448.HEIC",
+      "source_relative_path": ".source/images/IMG_3448.HEIC",
+      "actual_format": "JPEG",
+      "size_bytes": 3852738,
+      "width_pixels": 3024,
+      "height_pixels": 4032,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": null,
+      "status": "unassigned",
+      "first_version_scope": "unassigned",
+      "evidence": "No strong visual match found in the current 40-page export."
+    },
+    {
+      "source_id": 23,
+      "archive_filename": "Images/rezy spolu.jpg",
+      "filename": "rezy spolu.jpg",
+      "source_relative_path": ".source/images/rezy spolu.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 2327672,
+      "width_pixels": 2481,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        15
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Section comparison matches the left side of page 15."
+    },
+    {
+      "source_id": 24,
+      "archive_filename": "Images/axo diagram.pdf",
+      "filename": "axo diagram.pdf",
+      "source_relative_path": ".source/images/axo diagram.pdf",
+      "actual_format": "PDF",
+      "size_bytes": 1733666,
+      "width_pixels": null,
+      "height_pixels": null,
+      "verified_portfolio_pages": [
+        3,
+        9
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Exploded curved-roof construction diagram matches the lower middle of page 3 and right side of page 9."
+    },
+    {
+      "source_id": 25,
+      "archive_filename": "Images/steny spolu.jpg",
+      "filename": "steny spolu.jpg",
+      "source_relative_path": ".source/images/steny spolu.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 965600,
+      "width_pixels": 2480,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        14
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "The ordered wall-detail comparison matches page 14; the export is heavily degraded in this region."
+    },
+    {
+      "source_id": 26,
+      "archive_filename": "Images/vykresy 1933.jpg",
+      "filename": "vykresy 1933.jpg",
+      "source_relative_path": ".source/images/vykresy 1933.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 95490,
+      "width_pixels": 596,
+      "height_pixels": 842,
+      "verified_portfolio_pages": [
+        3,
+        12
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "1933 hut drawing components match page 3 and the upper drawing on page 12."
+    },
+    {
+      "source_id": 27,
+      "archive_filename": "Images/vykresy 1978.jpg",
+      "filename": "vykresy 1978.jpg",
+      "source_relative_path": ".source/images/vykresy 1978.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 110854,
+      "width_pixels": 596,
+      "height_pixels": 842,
+      "verified_portfolio_pages": [
+        3,
+        12
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "1978 hut drawing components match page 3 and the middle drawing on page 12."
+    },
+    {
+      "source_id": 28,
+      "archive_filename": "Images/podorys 1899.pdf",
+      "filename": "podorys 1899.pdf",
+      "source_relative_path": ".source/images/podorys 1899.pdf",
+      "actual_format": "PDF",
+      "size_bytes": 6407089,
+      "width_pixels": null,
+      "height_pixels": null,
+      "verified_portfolio_pages": [
+        3,
+        9
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "1899 floor plans match the top plans at lower right of page 3 and left side of page 9."
+    },
+    {
+      "source_id": 29,
+      "archive_filename": "Images/podorys 2020.pdf",
+      "filename": "podorys 2020.pdf",
+      "source_relative_path": ".source/images/podorys 2020.pdf",
+      "actual_format": "PDF",
+      "size_bytes": 17679065,
+      "width_pixels": null,
+      "height_pixels": null,
+      "verified_portfolio_pages": [
+        3,
+        10
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Modern floor plans match the bottom plans at lower right of page 3 and left side of page 10."
+    },
+    {
+      "source_id": 30,
+      "archive_filename": "Images/vykresy 2011.jpg",
+      "filename": "vykresy 2011.jpg",
+      "source_relative_path": ".source/images/vykresy 2011.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 154507,
+      "width_pixels": 596,
+      "height_pixels": 842,
+      "verified_portfolio_pages": [
+        3,
+        12
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "2011 hut drawing components match page 3 and the lower drawing on page 12."
+    },
+    {
+      "source_id": 31,
+      "archive_filename": "Images/img_9714_1570.jpg",
+      "filename": "img_9714_1570.jpg",
+      "source_relative_path": ".source/images/img_9714_1570.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 766639,
+      "width_pixels": 1570,
+      "height_pixels": 1046,
+      "verified_portfolio_pages": [
+        11
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Long hut photograph matches the right-hand photograph on page 11."
+    },
+    {
+      "source_id": 32,
+      "archive_filename": "Images/6214319_1000x.webp",
+      "filename": "6214319_1000x.webp",
+      "source_relative_path": ".source/images/6214319_1000x.webp",
+      "actual_format": "WEBP",
+      "size_bytes": 74740,
+      "width_pixels": 1000,
+      "height_pixels": 630,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Historical mountain construction photograph is thematically related; no strong match can be verified in the current export."
+    },
+    {
+      "source_id": 33,
+      "archive_filename": "Images/pohlady rozvoj.jpg",
+      "filename": "pohlady rozvoj.jpg",
+      "source_relative_path": ".source/images/pohlady rozvoj.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 9074025,
+      "width_pixels": 3508,
+      "height_pixels": 4961,
+      "verified_portfolio_pages": [
+        3,
+        13
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Facade-development drawings match the upper-right drawings on page 3; the bottom facade also matches page 13."
+    },
+    {
+      "source_id": 34,
+      "archive_filename": "Images/pricina zaniku.jpg",
+      "filename": "pricina zaniku.jpg",
+      "source_relative_path": ".source/images/pricina zaniku.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 307861,
+      "width_pixels": 2481,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Research chart source is mostly blank in its own preview; no reliable placement in the export can be verified."
+    },
+    {
+      "source_id": 35,
+      "archive_filename": "Images/PDFsam_merge 94.jpg",
+      "filename": "PDFsam_merge 94.jpg",
+      "source_relative_path": ".source/images/PDFsam_merge 94.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 282144,
+      "width_pixels": 1850,
+      "height_pixels": 1011,
+      "verified_portfolio_pages": [
+        26
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "revitalization-of-a-public-square",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Public-square rendering matches the bottom-left image on page 26."
+    },
+    {
+      "source_id": 36,
+      "archive_filename": "Images/PDFsam_merge 93.jpg",
+      "filename": "PDFsam_merge 93.jpg",
+      "source_relative_path": ".source/images/PDFsam_merge 93.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 168642,
+      "width_pixels": 1405,
+      "height_pixels": 1011,
+      "verified_portfolio_pages": [
+        26
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "revitalization-of-a-public-square",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Public-square axonometric matches the middle-left image on page 26."
+    },
+    {
+      "source_id": 37,
+      "archive_filename": "Images/PDFsam_merge 92.jpg",
+      "filename": "PDFsam_merge 92.jpg",
+      "source_relative_path": ".source/images/PDFsam_merge 92.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 126411,
+      "width_pixels": 1405,
+      "height_pixels": 844,
+      "verified_portfolio_pages": [
+        26
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "revitalization-of-a-public-square",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Public-square plan matches the top-left image on page 26."
+    },
+    {
+      "source_id": 38,
+      "archive_filename": "Images/PDFsam_merge 73.tif",
+      "filename": "PDFsam_merge 73.tif",
+      "source_relative_path": ".source/images/PDFsam_merge 73.tif",
+      "actual_format": "TIFF",
+      "size_bytes": 2764550,
+      "width_pixels": 1455,
+      "height_pixels": 818,
+      "verified_portfolio_pages": [
+        32
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "reserve-other-projects",
+      "status": "confirmed",
+      "first_version_scope": "reserve",
+      "evidence": "Interior rendering matches the lower-right image on page 32, Apartment 7-3-to-4; outside current scope."
+    },
+    {
+      "source_id": 39,
+      "archive_filename": "Images/PDFsam_merge 75.tif",
+      "filename": "PDFsam_merge 75.tif",
+      "source_relative_path": ".source/images/PDFsam_merge 75.tif",
+      "actual_format": "TIFF",
+      "size_bytes": 53022,
+      "width_pixels": 667,
+      "height_pixels": 500,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        33
+      ],
+      "website_project_group": "reserve-other-projects",
+      "status": "candidate",
+      "first_version_scope": "reserve",
+      "evidence": "House ISB diagram family, possibly one of the degraded placeholders on page 33; no strong visible match."
+    },
+    {
+      "source_id": 40,
+      "archive_filename": "Images/PDFsam_merge 74.tif",
+      "filename": "PDFsam_merge 74.tif",
+      "source_relative_path": ".source/images/PDFsam_merge 74.tif",
+      "actual_format": "TIFF",
+      "size_bytes": 574578,
+      "width_pixels": 889,
+      "height_pixels": 500,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        33
+      ],
+      "website_project_group": "reserve-other-projects",
+      "status": "candidate",
+      "first_version_scope": "reserve",
+      "evidence": "House ISB exterior-rendering family; page 33 includes a solid turquoise placeholder, so exact placement is unverified."
+    },
+    {
+      "source_id": 41,
+      "archive_filename": "Images/PDFsam_merge 76.tif",
+      "filename": "PDFsam_merge 76.tif",
+      "source_relative_path": ".source/images/PDFsam_merge 76.tif",
+      "actual_format": "TIFF",
+      "size_bytes": 50712,
+      "width_pixels": 667,
+      "height_pixels": 500,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        33
+      ],
+      "website_project_group": "reserve-other-projects",
+      "status": "candidate",
+      "first_version_scope": "reserve",
+      "evidence": "House ISB axonometric family; potential page 33 placement is degraded and unverified."
+    },
+    {
+      "source_id": 42,
+      "archive_filename": "Images/PDFsam_merge 77.tif",
+      "filename": "PDFsam_merge 77.tif",
+      "source_relative_path": ".source/images/PDFsam_merge 77.tif",
+      "actual_format": "TIFF",
+      "size_bytes": 37440,
+      "width_pixels": 667,
+      "height_pixels": 500,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        33
+      ],
+      "website_project_group": "reserve-other-projects",
+      "status": "candidate",
+      "first_version_scope": "reserve",
+      "evidence": "House ISB axonometric family; potential page 33 placement is degraded and unverified."
+    },
+    {
+      "source_id": 43,
+      "archive_filename": "Images/2026_references.jpeg",
+      "filename": "2026_references.jpeg",
+      "source_relative_path": ".source/images/2026_references.jpeg",
+      "actual_format": "JPEG",
+      "size_bytes": 46257,
+      "width_pixels": 400,
+      "height_pixels": 304,
+      "verified_portfolio_pages": [
+        17
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Historical engraving matches the upper-left image on page 17."
+    },
+    {
+      "source_id": 44,
+      "archive_filename": "Images/rez a konstrukcia.jpg",
+      "filename": "rez a konstrukcia.jpg",
+      "source_relative_path": ".source/images/rez a konstrukcia.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 2988806,
+      "width_pixels": 2481,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        17
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Red structural construction diagram matches the lower-right image on page 17."
+    },
+    {
+      "source_id": 45,
+      "archive_filename": "Images/podorysy 2NP spolu.jpg",
+      "filename": "podorysy 2NP spolu.jpg",
+      "source_relative_path": ".source/images/podorysy 2NP spolu.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 611115,
+      "width_pixels": 2481,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        16
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Upper-floor plan comparison matches the upper image on page 16."
+    },
+    {
+      "source_id": 46,
+      "archive_filename": "Images/podorysy 1NP spolu.jpg",
+      "filename": "podorysy 1NP spolu.jpg",
+      "source_relative_path": ".source/images/podorysy 1NP spolu.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 633744,
+      "width_pixels": 2481,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        16
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Ground-floor plan comparison matches the lower image on page 16."
+    },
+    {
+      "source_id": 47,
+      "archive_filename": "Images/151020dolina_1-1-scaled.jpg",
+      "filename": "151020dolina_1-1-scaled.jpg",
+      "source_relative_path": ".source/images/151020dolina_1-1-scaled.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 1228906,
+      "width_pixels": 2560,
+      "height_pixels": 1707,
+      "verified_portfolio_pages": [
+        20
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Resort aerial photograph matches the lower-right image on page 20."
+    },
+    {
+      "source_id": 48,
+      "archive_filename": "Images/zakladanie zanik majitel.jpg",
+      "filename": "zakladanie zanik majitel.jpg",
+      "source_relative_path": ".source/images/zakladanie zanik majitel.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 2004004,
+      "width_pixels": 4961,
+      "height_pixels": 3508,
+      "verified_portfolio_pages": [
+        6
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Red/black/blue ownership timeline matches page 6."
+    },
+    {
+      "source_id": 49,
+      "archive_filename": "Images/29908_119381481415526_6043777_n.jpg",
+      "filename": "29908_119381481415526_6043777_n.jpg",
+      "source_relative_path": ".source/images/29908_119381481415526_6043777_n.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 87612,
+      "width_pixels": 480,
+      "height_pixels": 720,
+      "verified_portfolio_pages": [
+        13
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Lakeside lodge photograph matches the left photograph on page 13."
+    },
+    {
+      "source_id": 50,
+      "archive_filename": "Images/192773_114392058641363_5042126_o.jpg",
+      "filename": "192773_114392058641363_5042126_o.jpg",
+      "source_relative_path": ".source/images/192773_114392058641363_5042126_o.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 143182,
+      "width_pixels": 837,
+      "height_pixels": 543,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Historical mountain postcard is thematically related; no strong placement verified in the current export."
+    },
+    {
+      "source_id": 51,
+      "archive_filename": "Images/tarpataki-tuzelo-ko-1874-divald-k.jpg",
+      "filename": "tarpataki-tuzelo-ko-1874-divald-k.jpg",
+      "source_relative_path": ".source/images/tarpataki-tuzelo-ko-1874-divald-k.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 90052,
+      "width_pixels": 507,
+      "height_pixels": 666,
+      "verified_portfolio_pages": [
+        2
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Historical mountain image matches the large central image on page 2."
+    },
+    {
+      "source_id": 52,
+      "archive_filename": "Images/Snímka obrazovky 2022-06-19 230257.png",
+      "filename": "Snímka obrazovky 2022-06-19 230257.png",
+      "source_relative_path": ".source/images/Snímka obrazovky 2022-06-19 230257.png",
+      "actual_format": "PNG",
+      "size_bytes": 474324,
+      "width_pixels": 665,
+      "height_pixels": 811,
+      "verified_portfolio_pages": [
+        18
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Historic valley-road image matches the middle image on page 18."
+    },
+    {
+      "source_id": 53,
+      "archive_filename": "Images/Shared Landscapes - Novotna - BERLIN.jpg",
+      "filename": "Shared Landscapes - Novotna - BERLIN.jpg",
+      "source_relative_path": ".source/images/Shared Landscapes - Novotna - BERLIN.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 43252,
+      "width_pixels": 960,
+      "height_pixels": 540,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        18
+      ],
+      "website_project_group": "the-valley",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Slide contains the same cave-image content as the page 18 left photograph; whether this screenshot was placed is unverified. Standalone source exists as asset 63."
+    },
+    {
+      "source_id": 54,
+      "archive_filename": "Images/Shared Landscapes - Novotna - BERLIN-2.jpg",
+      "filename": "Shared Landscapes - Novotna - BERLIN-2.jpg",
+      "source_relative_path": ".source/images/Shared Landscapes - Novotna - BERLIN-2.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 28353,
+      "width_pixels": 960,
+      "height_pixels": 540,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        20
+      ],
+      "website_project_group": "the-valley",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Historic winter landscape slide may correspond to the degraded lower-left image on page 20, but exact matching is impossible from the current render."
+    },
+    {
+      "source_id": 55,
+      "archive_filename": "Images/Shared Landscapes - Novotna - BERLIN-3.jpg",
+      "filename": "Shared Landscapes - Novotna - BERLIN-3.jpg",
+      "source_relative_path": ".source/images/Shared Landscapes - Novotna - BERLIN-3.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 66555,
+      "width_pixels": 960,
+      "height_pixels": 540,
+      "verified_portfolio_pages": [
+        20
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Historic regional-map content matches the upper-left map on page 20; slide border/text are cropped from the layout."
+    },
+    {
+      "source_id": 56,
+      "archive_filename": "Images/Shared Landscapes - Novotna - BERLIN-4.jpg",
+      "filename": "Shared Landscapes - Novotna - BERLIN-4.jpg",
+      "source_relative_path": ".source/images/Shared Landscapes - Novotna - BERLIN-4.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 105170,
+      "width_pixels": 960,
+      "height_pixels": 540,
+      "verified_portfolio_pages": [
+        20
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Historic valley-map content matches the upper-right map on page 20; slide border/text are cropped from the layout."
+    },
+    {
+      "source_id": 57,
+      "archive_filename": "Images/nizke-tatry-hotel-kosodrevina-81378122.webp",
+      "filename": "nizke-tatry-hotel-kosodrevina-81378122.webp",
+      "source_relative_path": ".source/images/nizke-tatry-hotel-kosodrevina-81378122.webp",
+      "actual_format": "WEBP",
+      "size_bytes": 21016,
+      "width_pixels": 532,
+      "height_pixels": 386,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Historic hotel postcard is thematically related to the Valley project; no strong placement verified."
+    },
+    {
+      "source_id": 58,
+      "archive_filename": "Images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-0.png",
+      "filename": "2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-0.png",
+      "source_relative_path": ".source/images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-0.png",
+      "actual_format": "PNG",
+      "size_bytes": 343960,
+      "width_pixels": 4500,
+      "height_pixels": 5625,
+      "verified_portfolio_pages": [
+        22
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "modernism-revisited-2026",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Call for Abstracts poster matches the lower-right image on page 22."
+    },
+    {
+      "source_id": 59,
+      "archive_filename": "Images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-09.png",
+      "filename": "2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-09.png",
+      "source_relative_path": ".source/images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-09.png",
+      "actual_format": "PNG",
+      "size_bytes": 403600,
+      "width_pixels": 4500,
+      "height_pixels": 5625,
+      "verified_portfolio_pages": [
+        22
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "modernism-revisited-2026",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "European Capital of Culture poster matches the upper-left image on page 22."
+    },
+    {
+      "source_id": 60,
+      "archive_filename": "Images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-032.png",
+      "filename": "2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-032.png",
+      "source_relative_path": ".source/images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-032.png",
+      "actual_format": "PNG",
+      "size_bytes": 279623,
+      "width_pixels": 4500,
+      "height_pixels": 5625,
+      "verified_portfolio_pages": [
+        22
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "modernism-revisited-2026",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Pink three-shape poster matches the lower-left image on page 22."
+    },
+    {
+      "source_id": 61,
+      "archive_filename": "Images/25440158_863637720470121_5072625764464661450_o.jpg",
+      "filename": "25440158_863637720470121_5072625764464661450_o.jpg",
+      "source_relative_path": ".source/images/25440158_863637720470121_5072625764464661450_o.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 94577,
+      "width_pixels": 1097,
+      "height_pixels": 776,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Historic winter hotel photograph is thematically related; no strong placement verified."
+    },
+    {
+      "source_id": 62,
+      "archive_filename": "Images/108056805_2659519577648627_861211990654423593_o.jpg",
+      "filename": "108056805_2659519577648627_861211990654423593_o.jpg",
+      "source_relative_path": ".source/images/108056805_2659519577648627_861211990654423593_o.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 350479,
+      "width_pixels": 1138,
+      "height_pixels": 723,
+      "verified_portfolio_pages": [],
+      "candidate_portfolio_pages": [
+        8
+      ],
+      "website_project_group": "flagship-mountain-hut-architecture",
+      "status": "candidate",
+      "first_version_scope": "included",
+      "evidence": "Historic mountain-hut postcard is thematically related; page 8 is too degraded to verify a match."
+    },
+    {
+      "source_id": 63,
+      "archive_filename": "Images/Demän.jaskyne12a historicke-pohladnice blogspot.jpg",
+      "filename": "Demän.jaskyne12a historicke-pohladnice blogspot.jpg",
+      "source_relative_path": ".source/images/Demän.jaskyne12a historicke-pohladnice blogspot.jpg",
+      "actual_format": "JPEG",
+      "size_bytes": 307605,
+      "width_pixels": 1130,
+      "height_pixels": 1600,
+      "verified_portfolio_pages": [
+        18
+      ],
+      "candidate_portfolio_pages": [],
+      "website_project_group": "the-valley",
+      "status": "confirmed",
+      "first_version_scope": "included",
+      "evidence": "Cave photograph matches the left image in the page 18 triptych."
+    }
+  ],
+  "selected_project_original_gaps": [
+    {
+      "project_group": "cool-nouveau",
+      "portfolio_pages": [
+        24
+      ],
+      "status": "missing-original",
+      "description": "All six page-24 embedded visuals have no corresponding original in Images.zip. Includes the exhibition photographs, turquoise poster and pink model image. User subsequently approved using these embedded Affinity visuals for the website."
+    },
+    {
+      "project_group": "flagship-mountain-hut-architecture",
+      "portfolio_pages": [
+        23
+      ],
+      "status": "missing-original",
+      "description": "Reflection on Architecture poster, book and event visuals are not present among Images.zip originals. User includes this related reflection/discourse section within the flagship project."
+    },
+    {
+      "project_group": "flagship-mountain-hut-architecture",
+      "portfolio_pages": [
+        4,
+        39,
+        40
+      ],
+      "status": "standalone-source-missing",
+      "description": "Current map variant and vector charts have no verified equivalent standalone source among Images.zip assets. Related map asset 2 is retained as a candidate."
+    },
+    {
+      "project_group": "flagship-mountain-hut-architecture",
+      "portfolio_pages": [
+        3,
+        10,
+        15
+      ],
+      "status": "missing-original",
+      "description": "Some individual analysis drawings and photographs visible on these pages have no strong original match in the supplied archive. Current asset map remains deliberately bounded."
+    },
+    {
+      "project_group": "the-valley",
+      "portfolio_pages": [
+        19
+      ],
+      "status": "missing-original",
+      "description": "SOSA publication cover artwork and the four staged tourism-development maps on page 19 are absent from Images.zip."
+    },
+    {
+      "project_group": "the-valley",
+      "portfolio_pages": [
+        21
+      ],
+      "status": "missing-original",
+      "description": "Three of the four page-21 photographs are absent from Images.zip; IMG_0068.jpg supplies the lower-left photograph."
+    },
+    {
+      "project_group": "revitalization-of-a-public-square",
+      "portfolio_pages": [
+        26
+      ],
+      "status": "missing-original",
+      "description": "Two realisation photographs at right on page 26 are absent from Images.zip; the supplied archive contains the three plan/axonometric/rendering visuals at left."
+    }
+  ]
+}

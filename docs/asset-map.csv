@@ -1,0 +1,64 @@
+﻿source_id,archive_filename,filename,actual_format,verified_portfolio_pages,candidate_portfolio_pages,website_project_group,status,first_version_scope,evidence
+1,Images/uvod.jpg,uvod.jpg,JPEG,17,,flagship-mountain-hut-architecture,confirmed,included,Architectural collage matches the upper-right image on page 17; possible landing image by later design choice.
+2,Images/dnes.jpg,dnes.jpg,JPEG,,4,flagship-mountain-hut-architecture,candidate,included,"Archive hut-location map is related to page 4, but the exported map uses a different visible overlay."
+3,Images/fig06.jpg,fig06.jpg,JPEG,12,,flagship-mountain-hut-architecture,confirmed,included,Mountain photograph matches the right-hand photograph on page 12.
+4,Images/fig05.jpg,fig05.jpg,JPEG,11,,flagship-mountain-hut-architecture,confirmed,included,Small hut photograph matches the left-hand photograph on page 11.
+5,Images/obr_1.jpg,obr_1.jpg,JPEG,18,,the-valley,confirmed,included,Valley landscape matches the right image in the page 18 triptych.
+6,Images/575701.jpg,575701.jpg,JPEG,17,,flagship-mountain-hut-architecture,confirmed,included,Historical scaffold photograph matches the lower-left image on page 17.
+7,Images/axo iba.pdf,axo iba.pdf,PDF,,7,flagship-mountain-hut-architecture,candidate,included,Single black axonometric hut model is related to the page 7 model comparison; direct placement cannot be verified.
+8,Images/31-2_low.jpg,31-2_low.jpg,JPEG,25,,visitors-centre-demanovska-dolina,confirmed,included,"Page 25 uses cropped portions of this competition board, including the exterior rendering."
+9,Images/31-1_low.jpg,31-1_low.jpg,JPEG,25,,visitors-centre-demanovska-dolina,confirmed,included,"Page 25 uses cropped portions of this competition board, including the site plan and axonometric."
+10,Images/podorysy.pdf,podorysy.pdf,PDF,13,,flagship-mountain-hut-architecture,confirmed,included,Floor-plan geometry matches the lower-right floor plan on page 13; source is rotated in the layout.
+11,Images/_MG_4295.jpg,_MG_4295.jpg,JPEG,37,,reserve-alps-rockies-and-usa-research,confirmed,reserve,Photograph matches the upper-left image on page 37. User excluded pages 37–38 from the first version.
+12,Images/IMG_0068.jpg,IMG_0068.jpg,JPEG,21,,the-valley,confirmed,included,Photograph matches the lower-left image on page 21.
+13,Images/IMG_0247.jpg,IMG_0247.jpg,JPEG,22,,modernism-revisited-2026,confirmed,included,Panel-discussion photograph matches the upper-right image on page 22.
+14,Images/_MG_4657.jpg,_MG_4657.jpg,JPEG,37,,reserve-alps-rockies-and-usa-research,confirmed,reserve,Photograph matches the lower-left image on page 37. User excluded pages 37–38 from the first version.
+15,Images/IMG_3888.HEIC,IMG_3888.HEIC,JPEG,,,,unassigned,unassigned,No strong visual match found in the current 40-page export.
+16,Images/IMG_4013.HEIC,IMG_4013.HEIC,JPEG,,,,unassigned,unassigned,No strong visual match found in the current 40-page export.
+17,Images/IMG_4044.HEIC,IMG_4044.HEIC,JPEG,,,reserve-alps-rockies-and-usa-research,candidate,reserve,"Photograph visibly contains Jackson Hole lettering, but no strong match appears on pages 37–38; kept outside the first version."
+18,Images/mnm styly.jpg,mnm styly.jpg,JPEG,5,,flagship-mountain-hut-architecture,confirmed,included,Periodisation composite matches the left image on page 5.
+19,Images/IMG_4502.HEIC,IMG_4502.HEIC,JPEG,,,,unassigned,unassigned,No strong visual match found in the current 40-page export.
+20,Images/IMG_3063.HEIC,IMG_3063.HEIC,HEIF,37,,reserve-alps-rockies-and-usa-research,confirmed,reserve,ALL TREES CLOSED photograph matches the right-hand image on page 37. User excluded pages 37–38 from the first version.
+21,Images/axo spolu.jpg,axo spolu.jpg,JPEG,7,,flagship-mountain-hut-architecture,confirmed,included,Nine-model black axonometric comparison matches page 7.
+22,Images/IMG_3448.HEIC,IMG_3448.HEIC,JPEG,,,,unassigned,unassigned,No strong visual match found in the current 40-page export.
+23,Images/rezy spolu.jpg,rezy spolu.jpg,JPEG,15,,flagship-mountain-hut-architecture,confirmed,included,Section comparison matches the left side of page 15.
+24,Images/axo diagram.pdf,axo diagram.pdf,PDF,3;9,,flagship-mountain-hut-architecture,confirmed,included,Exploded curved-roof construction diagram matches the lower middle of page 3 and right side of page 9.
+25,Images/steny spolu.jpg,steny spolu.jpg,JPEG,14,,flagship-mountain-hut-architecture,confirmed,included,The ordered wall-detail comparison matches page 14; the export is heavily degraded in this region.
+26,Images/vykresy 1933.jpg,vykresy 1933.jpg,JPEG,3;12,,flagship-mountain-hut-architecture,confirmed,included,1933 hut drawing components match page 3 and the upper drawing on page 12.
+27,Images/vykresy 1978.jpg,vykresy 1978.jpg,JPEG,3;12,,flagship-mountain-hut-architecture,confirmed,included,1978 hut drawing components match page 3 and the middle drawing on page 12.
+28,Images/podorys 1899.pdf,podorys 1899.pdf,PDF,3;9,,flagship-mountain-hut-architecture,confirmed,included,1899 floor plans match the top plans at lower right of page 3 and left side of page 9.
+29,Images/podorys 2020.pdf,podorys 2020.pdf,PDF,3;10,,flagship-mountain-hut-architecture,confirmed,included,Modern floor plans match the bottom plans at lower right of page 3 and left side of page 10.
+30,Images/vykresy 2011.jpg,vykresy 2011.jpg,JPEG,3;12,,flagship-mountain-hut-architecture,confirmed,included,2011 hut drawing components match page 3 and the lower drawing on page 12.
+31,Images/img_9714_1570.jpg,img_9714_1570.jpg,JPEG,11,,flagship-mountain-hut-architecture,confirmed,included,Long hut photograph matches the right-hand photograph on page 11.
+32,Images/6214319_1000x.webp,6214319_1000x.webp,WEBP,,,flagship-mountain-hut-architecture,candidate,included,Historical mountain construction photograph is thematically related; no strong match can be verified in the current export.
+33,Images/pohlady rozvoj.jpg,pohlady rozvoj.jpg,JPEG,3;13,,flagship-mountain-hut-architecture,confirmed,included,Facade-development drawings match the upper-right drawings on page 3; the bottom facade also matches page 13.
+34,Images/pricina zaniku.jpg,pricina zaniku.jpg,JPEG,,,flagship-mountain-hut-architecture,candidate,included,Research chart source is mostly blank in its own preview; no reliable placement in the export can be verified.
+35,Images/PDFsam_merge 94.jpg,PDFsam_merge 94.jpg,JPEG,26,,revitalization-of-a-public-square,confirmed,included,Public-square rendering matches the bottom-left image on page 26.
+36,Images/PDFsam_merge 93.jpg,PDFsam_merge 93.jpg,JPEG,26,,revitalization-of-a-public-square,confirmed,included,Public-square axonometric matches the middle-left image on page 26.
+37,Images/PDFsam_merge 92.jpg,PDFsam_merge 92.jpg,JPEG,26,,revitalization-of-a-public-square,confirmed,included,Public-square plan matches the top-left image on page 26.
+38,Images/PDFsam_merge 73.tif,PDFsam_merge 73.tif,TIFF,32,,reserve-other-projects,confirmed,reserve,"Interior rendering matches the lower-right image on page 32, Apartment 7-3-to-4; outside current scope."
+39,Images/PDFsam_merge 75.tif,PDFsam_merge 75.tif,TIFF,,33,reserve-other-projects,candidate,reserve,"House ISB diagram family, possibly one of the degraded placeholders on page 33; no strong visible match."
+40,Images/PDFsam_merge 74.tif,PDFsam_merge 74.tif,TIFF,,33,reserve-other-projects,candidate,reserve,"House ISB exterior-rendering family; page 33 includes a solid turquoise placeholder, so exact placement is unverified."
+41,Images/PDFsam_merge 76.tif,PDFsam_merge 76.tif,TIFF,,33,reserve-other-projects,candidate,reserve,House ISB axonometric family; potential page 33 placement is degraded and unverified.
+42,Images/PDFsam_merge 77.tif,PDFsam_merge 77.tif,TIFF,,33,reserve-other-projects,candidate,reserve,House ISB axonometric family; potential page 33 placement is degraded and unverified.
+43,Images/2026_references.jpeg,2026_references.jpeg,JPEG,17,,flagship-mountain-hut-architecture,confirmed,included,Historical engraving matches the upper-left image on page 17.
+44,Images/rez a konstrukcia.jpg,rez a konstrukcia.jpg,JPEG,17,,flagship-mountain-hut-architecture,confirmed,included,Red structural construction diagram matches the lower-right image on page 17.
+45,Images/podorysy 2NP spolu.jpg,podorysy 2NP spolu.jpg,JPEG,16,,flagship-mountain-hut-architecture,confirmed,included,Upper-floor plan comparison matches the upper image on page 16.
+46,Images/podorysy 1NP spolu.jpg,podorysy 1NP spolu.jpg,JPEG,16,,flagship-mountain-hut-architecture,confirmed,included,Ground-floor plan comparison matches the lower image on page 16.
+47,Images/151020dolina_1-1-scaled.jpg,151020dolina_1-1-scaled.jpg,JPEG,20,,the-valley,confirmed,included,Resort aerial photograph matches the lower-right image on page 20.
+48,Images/zakladanie zanik majitel.jpg,zakladanie zanik majitel.jpg,JPEG,6,,flagship-mountain-hut-architecture,confirmed,included,Red/black/blue ownership timeline matches page 6.
+49,Images/29908_119381481415526_6043777_n.jpg,29908_119381481415526_6043777_n.jpg,JPEG,13,,flagship-mountain-hut-architecture,confirmed,included,Lakeside lodge photograph matches the left photograph on page 13.
+50,Images/192773_114392058641363_5042126_o.jpg,192773_114392058641363_5042126_o.jpg,JPEG,,,flagship-mountain-hut-architecture,candidate,included,Historical mountain postcard is thematically related; no strong placement verified in the current export.
+51,Images/tarpataki-tuzelo-ko-1874-divald-k.jpg,tarpataki-tuzelo-ko-1874-divald-k.jpg,JPEG,2,,flagship-mountain-hut-architecture,confirmed,included,Historical mountain image matches the large central image on page 2.
+52,Images/Snímka obrazovky 2022-06-19 230257.png,Snímka obrazovky 2022-06-19 230257.png,PNG,18,,the-valley,confirmed,included,Historic valley-road image matches the middle image on page 18.
+53,Images/Shared Landscapes - Novotna - BERLIN.jpg,Shared Landscapes - Novotna - BERLIN.jpg,JPEG,,18,the-valley,candidate,included,Slide contains the same cave-image content as the page 18 left photograph; whether this screenshot was placed is unverified. Standalone source exists as asset 63.
+54,Images/Shared Landscapes - Novotna - BERLIN-2.jpg,Shared Landscapes - Novotna - BERLIN-2.jpg,JPEG,,20,the-valley,candidate,included,"Historic winter landscape slide may correspond to the degraded lower-left image on page 20, but exact matching is impossible from the current render."
+55,Images/Shared Landscapes - Novotna - BERLIN-3.jpg,Shared Landscapes - Novotna - BERLIN-3.jpg,JPEG,20,,the-valley,confirmed,included,Historic regional-map content matches the upper-left map on page 20; slide border/text are cropped from the layout.
+56,Images/Shared Landscapes - Novotna - BERLIN-4.jpg,Shared Landscapes - Novotna - BERLIN-4.jpg,JPEG,20,,the-valley,confirmed,included,Historic valley-map content matches the upper-right map on page 20; slide border/text are cropped from the layout.
+57,Images/nizke-tatry-hotel-kosodrevina-81378122.webp,nizke-tatry-hotel-kosodrevina-81378122.webp,WEBP,,,the-valley,candidate,included,Historic hotel postcard is thematically related to the Valley project; no strong placement verified.
+58,Images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-0.png,2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-0.png,PNG,22,,modernism-revisited-2026,confirmed,included,Call for Abstracts poster matches the lower-right image on page 22.
+59,Images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-09.png,2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-09.png,PNG,22,,modernism-revisited-2026,confirmed,included,European Capital of Culture poster matches the upper-left image on page 22.
+60,Images/2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-032.png,2511_MR_OPENCALL_TYTOS_Online_IG_FEED_2-032.png,PNG,22,,modernism-revisited-2026,confirmed,included,Pink three-shape poster matches the lower-left image on page 22.
+61,Images/25440158_863637720470121_5072625764464661450_o.jpg,25440158_863637720470121_5072625764464661450_o.jpg,JPEG,,,the-valley,candidate,included,Historic winter hotel photograph is thematically related; no strong placement verified.
+62,Images/108056805_2659519577648627_861211990654423593_o.jpg,108056805_2659519577648627_861211990654423593_o.jpg,JPEG,,8,flagship-mountain-hut-architecture,candidate,included,Historic mountain-hut postcard is thematically related; page 8 is too degraded to verify a match.
+63,Images/Demän.jaskyne12a historicke-pohladnice blogspot.jpg,Demän.jaskyne12a historicke-pohladnice blogspot.jpg,JPEG,18,,the-valley,confirmed,included,Cave photograph matches the left image in the page 18 triptych.
