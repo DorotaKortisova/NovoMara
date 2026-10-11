@@ -1,0 +1,108 @@
+/* The PhD page follows one research narrative, with local chapter navigation. */
+.phd-document { --chapter-nav-height: 50px; scroll-padding-top: 0; }
+.phd-page #main { scroll-margin-top: var(--header-height); }
+.phd-page :where([data-research-section], .phd-case, .phd-restoration-intro, .phd-comparison) { scroll-margin-top: calc(var(--header-height) + var(--chapter-nav-height) + 18px); }
+.phd-overview, .phd-chapter, .phd-related { width: min(100%, var(--page-width)); margin-inline: auto; padding-inline: var(--gutter); }
+.phd-overview { padding-block: 30px 36px; }
+.phd-overview .back-link { margin-bottom: 26px; }
+.phd-opening { display: grid; grid-template-columns: 1.08fr 1fr; gap: clamp(32px, 4.5vw, 64px); align-items: center; }
+.phd-opening h1 { margin: 0 0 20px; font-size: clamp(42px, 4.8vw, 64px); line-height: .98; letter-spacing: -.06em; }
+.phd-opening .eyebrow { margin-bottom: 16px; }
+.research-question { margin-bottom: 16px; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.4; letter-spacing: -.025em; }
+.phd-summary { margin-bottom: 20px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.phd-opening .meta-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 16px; column-gap: 16px; font-size: 11px; }
+.phd-opening .meta-grid > div { display: block; padding-block: 8px; border-bottom: 1px solid var(--rule); }
+.phd-opening .meta-grid dt { margin-bottom: 3px; font-size: 10px; }
+.phd-opening .project-affiliations { margin: 0 0 18px; color: var(--muted); font: 10px/1.6 var(--mono); }
+.phd-opening-image img { max-height: 380px; object-fit: contain; }
+.research-methods, .related-credits { border-top: 1px solid var(--rule); }
+.research-methods summary, .related-credits summary { min-height: 44px; padding-block: 12px; cursor: pointer; font: 11px/1.6 var(--mono); }
+.research-methods summary:hover, .related-credits summary:hover { color: var(--accent); }
+.research-methods > div, .related-credits > div { padding-top: 8px; font-size: 13px; line-height: 1.65; }
+.research-methods h2 { margin: 20px 0 8px; font: 11px/1.5 var(--mono); letter-spacing: 0; }
+.research-methods .affiliation { margin-bottom: 12px; font-size: 11px; }
+.phd-contents { width: min(100%, var(--page-width)); margin-inline: auto; position: sticky; top: var(--header-height); z-index: 15; padding-inline: var(--gutter); border-block: 1px solid var(--rule); background: var(--paper); }
+html:not(.js) .phd-contents { position: static; }
+.chapter-menu > summary { display: none; }
+.phd-contents .chapter-index { display: flex; flex-wrap: wrap; gap: 0 24px; }
+.phd-contents .chapter-index li { border: 0; }
+.phd-contents .chapter-index a { gap: 8px; min-height: 48px; padding-block: 14px; font-size: 10px; line-height: 1.6; border-bottom: 2px solid transparent; }
+.phd-contents .chapter-index a[aria-current="location"] { color: var(--accent); border-bottom-color: var(--accent); }
+.phd-contents .chapter-index a[aria-current="location"] span { color: var(--accent); }
+.phd-chapter { padding-block: 44px 52px; }
+.phd-chapter-heading { display: grid; grid-template-columns: minmax(190px, .65fr) minmax(0, 1.7fr); gap: 32px; align-items: baseline; margin-bottom: 28px; }
+.phd-chapter-heading .section-label { margin: 0; }
+.phd-chapter-heading h2 { margin: 0; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.05; }
+.phd-context, .phd-case, .phd-comparison { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.7fr); gap: clamp(32px, 4.5vw, 64px); align-items: start; }
+.phd-copy { font-size: 14px; line-height: 1.65; max-width: 38em; }
+.phd-copy h3 { margin: 0 0 18px; font-size: clamp(26px, 2.6vw, 35px); line-height: 1.08; }
+.phd-copy .eyebrow { margin-bottom: 12px; }
+.phd-copy .meta-grid { margin: 0 0 22px; font-size: 11px; }
+.phd-copy .meta-grid > div { grid-template-columns: 70px minmax(0, 1fr); gap: 12px; padding-block: 7px; }
+.phd-copy p:last-child { margin-bottom: 0; }
+.phd-context img { max-height: 340px; object-fit: contain; }
+.phd-history-figures { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px; padding-top: 26px; border-top: 1px solid var(--rule); }
+.phd-history-figures img { max-height: 360px; object-fit: contain; }
+.phd-section-intro { max-width: 64em; margin: 0 0 30px; color: var(--muted); font-size: 14px; }
+.phd-case, .phd-comparison { padding-block: 30px; border-top: 1px solid var(--rule); }
+.phd-case:last-of-type, .phd-comparison:last-child { padding-bottom: 0; }
+.phd-case-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.phd-case-figures img { max-height: 360px; object-fit: contain; }
+.phd-case-figures.single-figure { grid-template-columns: 1fr; }
+.phd-case-figures.single-figure img { max-height: 390px; }
+.phd-restoration-intro { max-width: 64em; padding-block: 28px 22px; font-size: 14px; color: var(--muted); }
+.phd-restoration-intro .eyebrow { margin-bottom: 10px; }
+.phd-restoration-intro p:last-child { margin-bottom: 0; }
+.phd-case-outcome { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; margin: 30px 0 0; color: var(--muted); font: 11px/1.6 var(--mono); }
+.phd-findings { background: var(--warm-paper); }
+.research-findings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 0; padding: 0; list-style: none; }
+.research-findings li { padding-top: 18px; border-top: 1px solid var(--rule); }
+.research-findings .section-label { margin-bottom: 16px; color: var(--accent); }
+.research-findings h3 { margin-bottom: 14px; font-size: 24px; line-height: 1.15; }
+.research-findings p { margin: 0; font-size: 14px; line-height: 1.65; }
+.phd-related { padding-block: 38px 44px; }
+.phd-related-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 18px 32px; margin-bottom: 26px; }
+.phd-related-heading .section-label { margin: 0; }
+.phd-related-heading h2 { margin: 0; font-size: clamp(27px, 2.6vw, 36px); }
+.phd-related-body { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(32px, 5vw, 72px); }
+.related-credits > div { padding-top: 0; }
+.related-credits .meta-grid { margin-top: 0; }
+.related-credits p { color: var(--muted); font-size: 12px; }
+.phd-publications { border-top: 1px solid var(--rule); }
+.phd-publications .publication-list a { padding-block: 18px; }
+.phd-publications .project-return { margin-top: 26px; }
+
+@media (max-width: 899px) {
+  .phd-opening, .phd-context, .phd-case, .phd-comparison, .phd-related-body { grid-template-columns: 1fr; gap: 28px; }
+  .phd-opening h1 { max-width: 15em; font-size: clamp(40px, 6.4vw, 56px); }
+  .phd-overview { padding-block: 24px 30px; }
+  .phd-opening-image { max-width: 600px; }
+  .phd-opening-image img { max-height: 320px; }
+  .chapter-menu > summary { display: flex; justify-content: space-between; align-items: center; min-height: 46px; padding-block: 12px; cursor: pointer; font: 11px/1.6 var(--mono); }
+  .chapter-menu[open] > summary span { transform: rotate(180deg); }
+  .phd-contents .chapter-index { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; padding-bottom: 8px; }
+  .phd-contents .chapter-index a { min-height: 44px; padding-block: 12px; }
+  .phd-chapter { padding-block: 34px 40px; }
+  .phd-chapter-heading { grid-template-columns: 1fr; gap: 12px; margin-bottom: 26px; }
+  .phd-chapter-heading h2 { max-width: 18em; font-size: clamp(31px, 4.5vw, 40px); }
+  .phd-copy { max-width: 48em; }
+  .phd-case-figures.single-figure { max-width: 680px; }
+  .research-findings { grid-template-columns: 1fr; gap: 24px; }
+  .research-findings h3 { font-size: 25px; }
+  .phd-related { padding-block: 32px 40px; }
+}
+@media (max-width: 450px) {
+  .phd-opening h1 { font-size: clamp(35px, 9.8vw, 44px); }
+  .research-question { font-size: 18px; }
+  .phd-opening .meta-grid { grid-template-columns: 1fr 1fr; }
+  .phd-opening .meta-grid > div:last-child { grid-column: 1 / -1; }
+  .phd-history-figures, .phd-case-figures { grid-template-columns: 1fr; gap: 26px; }
+  .phd-case-figures img, .phd-history-figures img { max-height: 400px; }
+  .phd-copy h3 { font-size: 30px; }
+}
+@media print {
+  .phd-contents { position: static; }
+  .chapter-menu > summary { display: none; }
+  .chapter-menu > .chapter-index { display: flex !important; }
+  .phd-chapter, .phd-overview, .phd-related { padding-block: 24px; }
+}

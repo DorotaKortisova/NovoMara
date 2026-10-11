@@ -36,11 +36,11 @@
 35,Images/PDFsam_merge 94.jpg,PDFsam_merge 94.jpg,JPEG,26,,revitalization-of-a-public-square,confirmed,included,Public-square rendering matches the bottom-left image on page 26.
 36,Images/PDFsam_merge 93.jpg,PDFsam_merge 93.jpg,JPEG,26,,revitalization-of-a-public-square,confirmed,included,Public-square axonometric matches the middle-left image on page 26.
 37,Images/PDFsam_merge 92.jpg,PDFsam_merge 92.jpg,JPEG,26,,revitalization-of-a-public-square,confirmed,included,Public-square plan matches the top-left image on page 26.
-38,Images/PDFsam_merge 73.tif,PDFsam_merge 73.tif,TIFF,32,,reserve-other-projects,confirmed,reserve,"Interior rendering matches the lower-right image on page 32, Apartment 7-3-to-4; outside current scope."
-39,Images/PDFsam_merge 75.tif,PDFsam_merge 75.tif,TIFF,,33,reserve-other-projects,candidate,reserve,"House ISB diagram family, possibly one of the degraded placeholders on page 33; no strong visible match."
-40,Images/PDFsam_merge 74.tif,PDFsam_merge 74.tif,TIFF,,33,reserve-other-projects,candidate,reserve,"House ISB exterior-rendering family; page 33 includes a solid turquoise placeholder, so exact placement is unverified."
-41,Images/PDFsam_merge 76.tif,PDFsam_merge 76.tif,TIFF,,33,reserve-other-projects,candidate,reserve,House ISB axonometric family; potential page 33 placement is degraded and unverified.
-42,Images/PDFsam_merge 77.tif,PDFsam_merge 77.tif,TIFF,,33,reserve-other-projects,candidate,reserve,House ISB axonometric family; potential page 33 placement is degraded and unverified.
+38,Images/PDFsam_merge 73.tif,PDFsam_merge 73.tif,TIFF,32,,apartment-7-3-to-4,confirmed,included,"Interior rendering matches the lower-right image on page 32, Apartment 7-3-to-4; now included in Practice by the latest scope approval."
+39,Images/PDFsam_merge 75.tif,PDFsam_merge 75.tif,TIFF,,33,house-isb,candidate,included,"House ISB diagram family, possibly one of the degraded placeholders on page 33; no strong visible match."
+40,Images/PDFsam_merge 74.tif,PDFsam_merge 74.tif,TIFF,,33,house-isb,candidate,included,"Clean garden rendering is visually consistent with page 33 photographs and plans and used instead of its flat cyan visual. Source-link metadata is unavailable, so the original page association remains a candidate."
+41,Images/PDFsam_merge 76.tif,PDFsam_merge 76.tif,TIFF,,33,house-isb,candidate,included,House ISB axonometric family; potential page 33 placement is degraded and unverified.
+42,Images/PDFsam_merge 77.tif,PDFsam_merge 77.tif,TIFF,,33,house-isb,candidate,included,House ISB axonometric family; potential page 33 placement is degraded and unverified.
 43,Images/2026_references.jpeg,2026_references.jpeg,JPEG,17,,flagship-mountain-hut-architecture,confirmed,included,Historical engraving matches the upper-left image on page 17.
 44,Images/rez a konstrukcia.jpg,rez a konstrukcia.jpg,JPEG,17,,flagship-mountain-hut-architecture,confirmed,included,Red structural construction diagram matches the lower-right image on page 17.
 45,Images/podorysy 2NP spolu.jpg,podorysy 2NP spolu.jpg,JPEG,16,,flagship-mountain-hut-architecture,confirmed,included,Upper-floor plan comparison matches the upper image on page 16.

@@ -6,7 +6,7 @@ Current branch: `codex/start`. Work is local in this checkout, also opened in VS
 
 ## First local website
 
-The first English version is implemented as a static website in `site/`. It includes an editable landing page, the dedicated [History of Mountain Hut Architecture page](site/projects/history-of-mountain-hut-architecture/index.html), and a manual slideshow for the five selected projects. The site remains local; deployment has not started.
+The English portfolio is implemented as a static website in `site/`. It includes an editable landing page, the dedicated [History of Mountain Hut Architecture page](site/projects/history-of-mountain-hut-architecture/index.html), separate manual Research and Practice slideshows, and home publications and contact sections. Research has seven projects; Practice has six, including the four projects from source pages 32–35. The site remains local; deployment has not started.
 
 With Node.js and npm available, run these commands from this checkout:
 
@@ -27,15 +27,20 @@ npm run preview
 
 The revised styling uses warm paper tones, thin rules, monospace labels, sans-serif text and selected italic serif emphasis. Typography uses the built-in Arial/Helvetica, Courier New and Georgia/Times New Roman font stacks.
 
-At widths of at least 900px and heights of at least 580px, selected projects use a compact notebook frame: one image with thumbnail selectors beside the project information. Full project copy remains in a scrollable details area, with expandable credits. Mobile and shorter windows show all images for the active project in the normal reading flow.
+The PhD page opens with a compact overview combining its title, short public research question, metadata and landscape photograph; the full source question and methods are expandable. Sticky contents provide seven links: Overview, History, Case studies, Comparative analysis, Findings, Related discourse and Selected publications. Case studies retain Téry Hut and the Contemporary Reflections group, with separate Rysy and Sliezsky dom subsections. Comparisons are organized around form and structure, spatial layout, and materials and prefabrication. Three concise source-grounded findings precede a smaller related lecture-series section with its visible period and expandable roles, dates and credits. All 14 existing project images are preserved; the footer avatar is separate. The user's latest instruction restores the dedicated four-publication list after Related discourse; the home list is unchanged.
 
-Every image retains its natural aspect ratio and only scales down to fit its available space, including thumbnails and the image viewer. Small COOL Nouveau visuals retain their intrinsic size limits. Project selection stays manual, with direct selectors, keyboard controls and touch gestures.
+At widths of at least 900px and heights of at least 580px, both project slideshows use a compact notebook frame: one image with thumbnail selectors beside the project information. Full project copy remains in a scrollable details area, with expandable credits. Mobile and shorter windows show all images for the active project in the normal reading flow.
+
+Project images retain their natural aspect ratios and only scale down to fit their available space, including thumbnails and the image viewer. Small COOL Nouveau visuals retain their intrinsic size limits. The footer portrait uses a circular display crop; its source image is unchanged. Project selection stays manual, with direct selectors, keyboard controls and touch gestures.
+
+After the flagship feature, Research retains the `#selected-projects` anchor for existing links; Practice follows at `#practice`. The home `#publications` section follows Practice and lists four publications from the user's referenced website: The Taming of the Wild (2025), Tatras Phoenix (2023), Alpine Huts on the second half of the twentieth century (2023), and the Téry Hut study (2022). The following `#contact` section contains the “Continue the conversation” heading and an email draft form addressed to `maria.novotna27@gmail.com`; the recipient is not displayed as a direct contact link. The form opens the user's email application through `mailto`; it has no backend, automatic sending or storage. Headers on both pages link to the home sections. A small circular portrait from `IMG_0208.jpg` appears beside Mária's name in both page footers.
 
 ## Editing and content references
 
-- Landing and selected-project copy: [site/index.html](site/index.html).
+- Landing, Research, Practice, publication and contact copy: [site/index.html](site/index.html).
 - Research chapters: [dedicated project page](site/projects/history-of-mountain-hut-architecture/index.html).
 - Shared presentation: [styles](site/assets/styles.css) and [interaction script](site/assets/portfolio.js).
+- PhD-page presentation: [research styles](site/assets/research.css), loaded only on the dedicated page.
 - Web images: `site/assets/images/`.
 
 - [Content map and website direction](docs/content-map.md)
@@ -43,14 +48,18 @@ Every image retains its natural aspect ratio and only scales down to fit its ava
 - [Project structure](docs/project-map.json)
 - [Original asset mapping](docs/asset-map.json)
 
-The content documents preserve the approved scope, source page references, project order and assets still held outside the first version. Future separate pages for the five selected projects remain planned; their `More` links will be added when those pages exist.
+The content documents preserve source references and decision history. The user's latest approval supersedes the original five-project selection: pages 28–31 join Research, pages 32–35 join Practice, and Visitors centre and Public square move to Practice without duplicates. Only pages 37–38 remain reserved by the earlier explicit exclusion. Future separate project pages remain planned; their `More` links will be added when those pages exist.
 
 ## Sources
 
-The source folder is `C:\Users\mariu\Desktop\Maria\PORTFOLIO`. The open Affinity document was exported locally for inspection as `.source/portfolio/2026 architrekt research practise.pdf` (40 pages). Its extracted text and rendered page previews are kept beside it.
+The source folder is `C:\Users\mariu\Desktop\Maria\PORTFOLIO`. The previously exported Affinity document is kept locally as `.source/portfolio/2026 architrekt research practise.pdf` (40 pages), with extracted text and rendered previews beside it. The expanded Research and Practice content uses this existing export; no fresh Affinity export was obtained for the additions.
 
 Original `Images.zip` assets are extracted to `.source/images`; `Fonts.zip` to `.source/fonts`. Source archives on the Desktop are preserved. Inventories and contact sheets are under `.source/`. These working sources are ignored by Git. Selected archive assets have been optimized into WebP files under `site/assets/images/`.
 
+The site contains 54 WebP images plus the user-supplied `site/assets/images/IMG_0208.jpg` footer portrait. The original 34-image provenance manifest remains unchanged at `.source/web-assets-manifest.json`. The 20 additions from pages 28–35 are recorded separately in `.source/additional-web-assets-manifest.json` and previewed in `.source/contact-sheets/additional-projects.jpg`. The portrait remains separate from the portfolio archive and both WebP manifests.
+
 COOL Nouveau's six images were absent from `Images.zip`. With the user's approval, the embedded visuals on page 24 of the current Affinity export were extracted individually and saved as `cool-1.webp` through `cool-6.webp`; the site does not use a full-page screenshot. Their source resolution and aspect ratios are preserved. Asset provenance is recorded locally in `.source/web-assets-manifest.json`, with an approved-image contact sheet at `.source/contact-sheets/cool-approved-embedded.jpg`.
 
-Content comes from the supplied portfolio, with page references recorded in the audit. Landing wording is an authorized editable draft, and project summaries are concise adaptations of the source. Contact details are omitted because none were supplied. Other missing originals remain recorded in the asset map; additional material stays outside the first version as agreed.
+The latest source-addition task also authorizes using embedded visuals from pages 28–35 where originals are unavailable. The House ISB gallery uses the clean garden rendering from `PDFsam_merge 74.tif` alongside clear source plans, avoiding the defective flat cyan visual. Its visual association remains a candidate because source-link metadata is unavailable. Low-resolution embedded visuals and unresolved source defects remain recorded for later replacement.
+
+Portfolio content comes from the supplied portfolio, with page references recorded in the audit. Landing wording is an authorized editable draft, and project summaries are concise adaptations of the source. The original cover supplied no contact details; the user later provided the reference website at `http://localhost:4321/#research`. Its newer saved source in the parent workspace, `tmp/main-sync/src/pages/index.astro` and `tmp/main-sync/src/scripts/site.js`, supplies the home publication citations and contact email. These additions follow that reference without claiming a new independent bibliographic verification. Missing originals remain recorded in the asset map; Alps/Rockies and USA national-park research stay outside the website as agreed.

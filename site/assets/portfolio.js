@@ -39,6 +39,128 @@
     render();
   };
 
+  const initResearchNavigation = () => {
+    const nav = document.querySelector('[data-research-nav]');
+    const menu = nav?.querySelector('[data-chapter-menu]');
+    const summary = menu?.querySelector('summary');
+    if (!nav || !menu || !summary) return;
+
+    const header = document.querySelector('.site-header');
+    const desktop = window.matchMedia('(min-width: 900px)');
+    const chapters = Array.from(nav.querySelectorAll('a[href^="#"]')).flatMap((link) => {
+      let id;
+      try { id = decodeURIComponent(link.hash.slice(1)); }
+      catch { return []; }
+      const section = document.getElementById(id);
+      return section?.matches('[data-research-section]') ? [{ link, section }] : [];
+    });
+    if (!chapters.length) return;
+
+    let navHeight = 0;
+    let frame = 0;
+    const measureNavigation = () => {
+      const height = Math.ceil(nav.getBoundingClientRect().height);
+      if (height === navHeight) return;
+      navHeight = height;
+      document.documentElement.style.setProperty('--chapter-nav-height', `${height}px`);
+    };
+    const stickyOffset = () => (header?.getBoundingClientRect().height || 0) + navHeight;
+    const updateActive = () => {
+      const threshold = stickyOffset() + 24;
+      let active = chapters[0];
+      chapters.forEach((chapter) => {
+        if (chapter.section.getBoundingClientRect().top <= threshold) active = chapter;
+      });
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+        active = chapters[chapters.length - 1];
+      }
+      chapters.forEach(({ link }) => {
+        if (link === active.link) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    const scheduleActive = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        updateActive();
+      });
+    };
+    const measureAndSchedule = () => {
+      measureNavigation();
+      scheduleActive();
+    };
+    const closeMenu = () => {
+      if (menu.contains(document.activeElement) && document.activeElement !== summary) {
+        summary.focus({ preventScroll: true });
+      }
+      menu.open = false;
+      measureAndSchedule();
+    };
+    const onViewportChange = () => {
+      if (desktop.matches) {
+        menu.open = true;
+        if (document.activeElement === summary) {
+          (chapters.find(({ link }) => link.hasAttribute('aria-current')) || chapters[0]).link.focus({ preventScroll: true });
+        }
+        measureAndSchedule();
+      } else closeMenu();
+    };
+
+    nav.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href^="#"]');
+      const chapter = chapters.find((item) => item.link === link);
+      if (!chapter || desktop.matches || event.defaultPrevented || event.button !== 0 ||
+          event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      closeMenu();
+      const offset = stickyOffset();
+      const margin = parseFloat(window.getComputedStyle(chapter.section).scrollMarginTop) || 0;
+      // Closing and measuring before the default action lets ordinary anchors use
+      // the collapsed menu's CSS offset. Only missing offsets need custom scrolling.
+      if (margin >= offset - 1) return;
+      event.preventDefault();
+      if (window.location.hash !== link.hash) {
+        try { window.history.pushState(null, '', link.hash); }
+        catch { window.location.hash = link.hash; }
+      }
+      window.scrollTo({ top: Math.max(0, window.scrollY + chapter.section.getBoundingClientRect().top - offset), behavior: 'instant' });
+      scheduleActive();
+    });
+
+    const alignHashTarget = () => {
+      let id;
+      try { id = decodeURIComponent(window.location.hash.slice(1)); }
+      catch { return; }
+      const target = id && document.getElementById(id);
+      if (!target || !chapters.some(({ section }) => section === target || section.contains(target))) return;
+      if (!desktop.matches && menu.open) closeMenu();
+      requestAnimationFrame(() => {
+        measureNavigation();
+        const margin = parseFloat(window.getComputedStyle(target).scrollMarginTop) || 0;
+        const offset = Math.max(stickyOffset(), margin);
+        const maximum = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+        const top = Math.min(maximum, Math.max(0, window.scrollY + target.getBoundingClientRect().top - offset));
+        if (Math.abs(window.scrollY - top) > 1) window.scrollTo({ top, behavior: 'instant' });
+        scheduleActive();
+      });
+    };
+
+    menu.addEventListener('toggle', measureAndSchedule);
+    window.addEventListener('scroll', scheduleActive, { passive: true });
+    window.addEventListener('hashchange', alignHashTarget);
+    window.addEventListener('load', alignHashTarget, { once: true });
+    window.addEventListener('resize', measureAndSchedule, { passive: true });
+    if (typeof ResizeObserver !== 'undefined') {
+      const observer = new ResizeObserver(measureAndSchedule);
+      observer.observe(nav);
+      if (header) observer.observe(header);
+    }
+    if (desktop.addEventListener) desktop.addEventListener('change', onViewportChange);
+    else desktop.addListener(onViewportChange);
+    onViewportChange();
+    alignHashTarget();
+  };
+
   const compactProjects = window.matchMedia('(min-width: 900px) and (min-height: 580px)');
 
   const initProjectGallery = (slide, title) => {
@@ -398,10 +520,35 @@
     });
   };
 
+  const initContactForm = () => {
+    const form = document.querySelector('#contact-form');
+    if (!form) return;
+    const name = form.elements.namedItem('name');
+    const email = form.elements.namedItem('email');
+    const message = form.elements.namedItem('message');
+    const recipient = form.dataset.recipient;
+    if (!name || !email || !message || !recipient) return;
+
+    [name, message].forEach((field) => {
+      field.addEventListener('input', () => field.setCustomValidity(''));
+    });
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      name.setCustomValidity(name.value.trim() ? '' : 'Please enter your name.');
+      message.setCustomValidity(message.value.trim() ? '' : 'Please enter a message.');
+      if (!form.reportValidity()) return;
+      const subject = encodeURIComponent(`Portfolio enquiry from ${name.value.trim()}`);
+      const body = encodeURIComponent(`${message.value.trim()}\n\n${name.value.trim()}\n${email.value.trim()}`);
+      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    });
+  };
+
   const init = () => {
     initNavigation();
+    initResearchNavigation();
     document.querySelectorAll('[data-project-carousel]').forEach(initCarousel);
     initImageViewer();
+    initContactForm();
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
   else init();

@@ -3,11 +3,20 @@
   "method": "Bounded visual comparison of original archive previews and current 40-page PDF renders. Confirmed means a distinctive visual match; no claim of original binary identity. Candidates are kept separate from verified page associations.",
   "scope_notes": [
     "Page 23 Reflection on Architecture belongs to the flagship project by user instruction.",
-    "Pages 28–35 remain reserve projects outside the first version.",
+    "The user's latest approval includes pages 28–31 in Research and pages 32–35 in Practice; their former reserved status is superseded.",
     "Pages 37–38 Alps/Rockies and USA research remain separate and outside the first version by user instruction.",
-    "No portfolio PDF image is substituted for an archive original without approval; user specifically approved the six COOL Nouveau page-24 embedded visuals."
+    "The user approved the six COOL Nouveau page-24 embedded visuals and, in the latest source-addition task, reuse of embedded visuals from pages 28–35 where originals are unavailable.",
+    "House ISB uses the clean PDFsam_merge 74.tif garden rendering as a visually consistent candidate instead of the defective flat cyan visual; source-link metadata is unavailable, so its original page association is not verified."
   ],
   "original_asset_count": 63,
+  "web_derivatives": {
+    "initial_asset_count": 34,
+    "initial_manifest": ".source/web-assets-manifest.json",
+    "additional_asset_count": 20,
+    "additional_manifest": ".source/additional-web-assets-manifest.json",
+    "additional_contact_sheet": ".source/contact-sheets/additional-projects.jpg",
+    "note": "The 54 WebP derivatives and separate user-supplied footer JPEG do not increase the 63-asset original archive inventory."
+  },
   "assets": [
     {
       "source_id": 1,
@@ -681,10 +690,10 @@
         32
       ],
       "candidate_portfolio_pages": [],
-      "website_project_group": "reserve-other-projects",
+      "website_project_group": "apartment-7-3-to-4",
       "status": "confirmed",
-      "first_version_scope": "reserve",
-      "evidence": "Interior rendering matches the lower-right image on page 32, Apartment 7-3-to-4; outside current scope."
+      "first_version_scope": "included",
+      "evidence": "Interior rendering matches the lower-right image on page 32, Apartment 7-3-to-4; now included in Practice by the latest scope approval."
     },
     {
       "source_id": 39,
@@ -699,9 +708,9 @@
       "candidate_portfolio_pages": [
         33
       ],
-      "website_project_group": "reserve-other-projects",
+      "website_project_group": "house-isb",
       "status": "candidate",
-      "first_version_scope": "reserve",
+      "first_version_scope": "included",
       "evidence": "House ISB diagram family, possibly one of the degraded placeholders on page 33; no strong visible match."
     },
     {
@@ -717,10 +726,10 @@
       "candidate_portfolio_pages": [
         33
       ],
-      "website_project_group": "reserve-other-projects",
+      "website_project_group": "house-isb",
       "status": "candidate",
-      "first_version_scope": "reserve",
-      "evidence": "House ISB exterior-rendering family; page 33 includes a solid turquoise placeholder, so exact placement is unverified."
+      "first_version_scope": "included",
+      "evidence": "Clean garden rendering is visually consistent with page 33 photographs and plans and used instead of its flat cyan visual. Source-link metadata is unavailable, so the original page association remains a candidate."
     },
     {
       "source_id": 41,
@@ -735,9 +744,9 @@
       "candidate_portfolio_pages": [
         33
       ],
-      "website_project_group": "reserve-other-projects",
+      "website_project_group": "house-isb",
       "status": "candidate",
-      "first_version_scope": "reserve",
+      "first_version_scope": "included",
       "evidence": "House ISB axonometric family; potential page 33 placement is degraded and unverified."
     },
     {
@@ -753,9 +762,9 @@
       "candidate_portfolio_pages": [
         33
       ],
-      "website_project_group": "reserve-other-projects",
+      "website_project_group": "house-isb",
       "status": "candidate",
-      "first_version_scope": "reserve",
+      "first_version_scope": "included",
       "evidence": "House ISB axonometric family; potential page 33 placement is degraded and unverified."
     },
     {

@@ -1,31 +1,53 @@
 # Portfolio content map
 
-Content map for the first local English website, based on the user's selected project groups and the current 40-page Affinity export. The implementation is in `site/`; the site has not been deployed.
+Content map for the local English website, based on the user's approved Research and Practice grouping and the existing 40-page Affinity export. No fresh Affinity export was obtained for the expanded scope. The implementation is in `site/`; the site has not been deployed.
 
 ## Decisions received
 
 - Use English for the first version.
 - Draft landing copy from the supplied context, to be adjusted together later.
 - Treat the PhD research as one main project with its own page.
-- Use the five other selected projects in the requested slideshow order.
+- The initial five-project slideshow order is historical. The user's latest approval supersedes that selection with separate Research and Practice sections and includes source pages 28–35.
 - Preserve the portfolio's visual character while adapting readability and interaction to the web.
 - Keep Alps/Rockies and USA national-park research outside the first version.
 - Group the reflections under the main mountain architecture project, including the page 23 lecture/discourse material as related work.
 - Use the six embedded COOL Nouveau visuals from page 24, with explicit user approval, because matching originals are absent from `Images.zip`.
+- The latest source-addition task also authorizes embedded visuals from pages 28–35 when archive originals are unavailable; retain source-resolution and rendering caveats.
+- Add home publications and contact sections following the user's referenced website at `http://localhost:4321/#research`, using its newer saved source. Display the user-supplied `IMG_0208.jpg` portrait as a circular avatar beside Mária's name in both page footers.
 
 ## Website structure
 
 | Position | Website content | Source pages | Presentation |
 |---|---|---|---|
-| 1 | Landing: Mária Novotná | 1, plus selected supplied project material | An introduction, entry to the PhD project, and entry to selected projects. |
+| 1 | Landing: Mária Novotná | 1, plus selected supplied project material | An introduction and entries to the PhD project, Research and Practice. |
 | 2 | History of Mountain Hut Architecture | 2–17, 23, 39–40 | A featured introduction on the landing page and one dedicated project page. |
-| 3 | The Valley | 18–21 | First selected-project slide; nested research spreads and Jasná. |
-| 4 | Modernism Revisited 2026 | 22 | Second selected-project slide. |
-| 5 | COOL Nouveau | 24 | Third selected-project slide. |
-| 6 | Visitors centre Demänovská dolina | 25 | Fourth selected-project slide. |
-| 7 | Revitalization of a public square | 26 | Fifth selected-project slide. |
+| 3 | Research | 18–22, 24, 28–31 | Seven projects in a manual slideshow at `#selected-projects`. |
+| 4 | Practice | 25–26, 32–35 | Six projects in a separate manual slideshow at `#practice`. |
+| 5 | Selected publications | Related outcomes on 2, 7, 11, 18; citation presentation from the user-referenced website | Four linked publication rows at `#publications`. |
+| 6 | Contact | User-referenced website; absent from the original cover | “Continue the conversation” heading and email draft form at `#contact`. |
 
-The landing page is implemented at `/`. The slideshow sits in its `#selected-projects` section after the PhD feature at `#research`. A persistent list of five project selectors makes each project directly reachable without advancing through every slide.
+The landing page is implemented at `/`. After the PhD feature at `#research`, the Research slideshow keeps `#selected-projects` for link compatibility. Practice follows at `#practice`, then `#publications` and `#contact`. Each slideshow has direct project selectors and independent Previous/Next controls. Headers on both pages link to the home sections.
+
+| Research order | Project | Source pages |
+|---|---|---|
+| 1 | The Valley | 18–21 |
+| 2 | Modernism Revisited 2026 | 22 |
+| 3 | COOL Nouveau | 24 |
+| 4 | Flaine / Sri Lanka | 28 |
+| 5 | Capanna Cristallina | 29 |
+| 6 | Vladimír Dedeček — interpretation of his architecture | 30 |
+| 7 | Residential buildings | 31 |
+
+| Practice order | Project | Source pages |
+|---|---|---|
+| 1 | Visitors centre Demänovská dolina | 25 |
+| 2 | Revitalization of a public square | 26 |
+| 3 | Apartment 7-3-to-4 | 32 |
+| 4 | House ISB | 33 |
+| 5 | Alaš | 34 |
+| 6 | Dormitory | 35 |
+
+Visitors centre and Public square are moved into Practice, without duplicate entries in Research. The flagship and its chapters remain intact.
 
 The slash-separated line `Mountain Solitudes / FAD / Innovation in architecture of 20th century in Slovakia` stays with the PhD project. `FAD / SAV / Pre Dolinu / Fulbright visiting research` stays with The Valley. These lines do not create additional top-level projects.
 
@@ -33,17 +55,21 @@ The slash-separated line `Mountain Solitudes / FAD / Innovation in architecture 
 
 Implemented route: `/projects/history-of-mountain-hut-architecture/`, from `site/projects/history-of-mountain-hut-architecture/index.html`.
 
-| Chapter | Source material |
+| Page section / anchor | Source material and hierarchy |
 |---|---|
-| Research overview | Page 2: supplied overview, research question, methodology, findings and outcomes. |
-| History, mapping and periodisation | Pages 3–6: architectural analysis, hut locations, timeline and ownership; pages 39–40: additional diagrams. |
-| Téry Hut | Pages 7–10: case-study overview, historical and architectural analysis, contemporary condition. |
-| Contemporary Reflections | Pages 11–13: Hut under Mt. Rysy and Lodge Silesian House / Sliezsky dom. Source spelling of Reflections/Reflexions varies. |
-| Architecture in the Mountains | Pages 14–17: comparative construction, roofs, façades, materials, spatial layout and prefabrication. |
-| Reflections on Architecture | Page 23: lecture/discourse project; the title cell uses the singular `Reflection`. Grouped here following the user's explicit content decision; retain its own supplied dates, roles, credits and affiliation. |
-| Publications and research outcomes | Four supplied research-publication titles and DOI links are included. |
+| Overview / `#overview` | Compact header with title, short public question and metadata from page 2, with the landscape photograph alongside the introduction. The full source question and methods are expandable; project period and historical study dates remain distinct. |
+| History / `#history` | Pages 3–6: architectural analysis, hut locations, periodisation and ownership; pages 39–40 retain their source classification as related historical diagrams. |
+| Case studies / `#case-studies` | Contains Téry Hut at `#tery-hut` (pages 7–10) and the Contemporary Reflections restoration group at `#contemporary-reflections` (pages 11–13). The latter retains nested `#rysy-hut` and `#sliezsky-dom` subsections. |
+| Comparative analysis / `#architecture-in-the-mountains` | Pages 14–17, organized into three image/text groups: form and structure; spatial layout; materials and prefabrication. |
+| Findings / `#findings` | Three concise editorial adaptations of complete source conclusions on pages 2, 11 and 14–17: environment shapes form; isolation shapes construction and use; restoration preserves environmental logic. |
+| Related discourse / `#reflections-on-architecture` | A smaller section for the page-23 lecture/publication series, with its 2020–2024 period visible and its affiliation, director and Mária's contributions under the native expandable “Roles, dates & credits.” It stays under this project by user instruction without implying it is formally a thesis component. |
+| Selected publications / `#publications` | Restored after Related discourse by the user's latest instruction, under `05 / Research outcomes`. Four publication outcomes from source pages 2, 7 and 11. |
 
-The dedicated page has links to history and mapping, Téry Hut, Contemporary Reflections, Architecture in the Mountains, Reflections on Architecture, and publications. It includes a return to the portfolio. Project dates remain separate from the historical period studied, and the supplied project/affiliation line is secondary to the readable title.
+Sticky responsive contents provide seven links: Overview, History, Case studies, Comparative analysis, Findings, Related discourse and Selected publications. Téry Hut and the two Contemporary Reflections buildings retain direct nested anchors. Building dates, historical drawing dates and research periods remain distinct: Téry's 1899 building date differs from its 2020–2022 research, and the restoration group's 2022–2024 period does not date each renovation. The 1933 Rysy drawing retains its source caption.
+
+The seven targets are the `#overview` header and the six following sections. The dedicated page loads `site/assets/research.css` alongside the shared styles, scoped through `phd-document` and `phd-page`. All 14 existing project images remain in the reorganized page, alongside the separate footer avatar; the asset set is unchanged.
+
+The earlier removal of the dedicated Selected publications section is superseded by the user's latest instruction to restore its original four entries: the Alpine Huts first-half study (`10.2478/alfa-2022-0002`), the second-half study (`10.2478/alfa-2023-0005`), the Téry Hut study (`10.31577/archandurb.2022.56.1-2.10`) and Tatras Phoenix (`10.30682/aa2310r`). The sticky contents link targets this page's `#publications`; the global header still links to the unchanged four-entry home list. “Continue to research projects” returns to the home Research section. The supplied project/affiliation line remains secondary to the readable title. Captions and material descriptions stay grounded in the supplied source.
 
 Page 40's chart remains in the source inventory but is omitted from the website imagery because its current rendering contains a large black diagonal band. The first version uses selected supplied archive drawings and photographs for the other chapters; it does not reproduce the defective page 4 or page 8 renders. Missing charts and archival imagery stay recorded in the asset map.
 
@@ -53,17 +79,38 @@ Core source pages 18–21 comprise the overview, Held Captive by the Tourism Ind
 
 Pages 37–38 show Alps/Rockies comparison and USA national-park research, dated 2024–25. The user has decided to keep these separate and outside the first version.
 
-## Selected-project layout
+## Research and Practice layout
 
-At widths of at least 900px and heights of at least 580px, selected projects use a compact notebook frame within the available viewport. One image is shown at a time, with thumbnail selectors beneath it and the project information alongside it. Full project copy and metadata remain in a scrollable details area; supplied credits can be expanded.
+At widths of at least 900px and heights of at least 580px, both project slideshows use a compact notebook frame within the available viewport. One image is shown at a time, with thumbnail selectors beneath it and the project information alongside it. Full project copy and metadata remain in a scrollable details area; supplied credits can be expanded.
 
 Mobile and shorter windows show all images for the active project in the normal reading flow. Project text, metadata and credits remain real HTML. Linked project images open in an image viewer, with direct image links as the fallback.
 
 Images use automatic dimensions, retain their natural aspect ratios and only scale down to fit. The same limits apply to the desktop gallery, thumbnails and image viewer, including the smaller COOL Nouveau visuals.
 
-The first version uses one slide per project, each with selected imagery, concise source-grounded text, metadata and supplied credits. Collaborative teams and contributions remain available under expandable credits. The six COOL Nouveau images are approved embedded visuals from the current Affinity export; other site imagery comes from selected supplied archive assets.
+Each project uses one slide with selected imagery, concise source-grounded text, metadata and supplied credits. Collaborative teams and contributions remain available under expandable credits. Project imagery uses available archive originals and authorized embedded visuals from export page 24 and pages 28–35. The footer portrait was supplied separately by the user.
 
-Future selected-project routes are recorded in `project-map.json`. Their `detailPath` remains null, and the current site has no `More` links to unbuilt pages.
+Future project routes are recorded in schema version 2 of `project-map.json`, split into `researchProjects` and `practiceProjects`. Their `detailPath` remains null, and the current site has no `More` links to unbuilt pages.
+
+## Home publications and contact
+
+The home publication list follows the newer saved version of the user's reference website in the parent workspace, `tmp/main-sync/src/pages/index.astro`. Its four entries remain unchanged by the restoration of the separate PhD publication list.
+
+The home section uses a compact heading with natural wrapping and tighter responsive spacing while preserving all four complete publication entries and citations.
+
+| Year | Publication | Link |
+|---|---|---|
+| 2025 | The Taming of the Wild | `https://doi.org/10.31261/FLPI.2025.10.16` |
+| 2023 | Tatras Phoenix: Architecture of Restoration in the Alpine Environment of the High Tatras | `https://doi.org/10.30682/aa2310r` |
+| 2023 | Alpine Huts: Architectural Innovations and Development in the High Tatras in the Second Half of the 20th Century | `https://doi.org/10.2478/alfa-2023-0005` |
+| 2022 | The Mountain Lodge Téry Hut: Innovations in Alpine-Zone Architecture | `https://doi.org/10.31577/archandurb.2022.56.1-2.10` |
+
+The displayed citations follow that supplied reference; this addition does not constitute independent bibliographic verification. The portfolio export also records these publication outcomes on pages 2, 7, 11 and 18.
+
+Contact follows publications with the “Continue the conversation” heading and email draft form. Its recipient is `maria.novotna27@gmail.com`, without a separate name or direct email link under the heading. The email comes from the reference's newer saved interaction script, `tmp/main-sync/src/scripts/site.js`; it was absent from the original portfolio cover.
+
+The user-supplied `site/assets/images/IMG_0208.jpg` appears as a small circular portrait beside Mária's name in both page footers. Only its display is cropped; the JPEG remains unchanged, and project images retain their natural proportions.
+
+The contact form accepts name, email and message, validates required fields and prepares an encoded `mailto` draft. It opens the user's email application and has no backend, automatic sending or storage.
 
 ## Visual direction
 
@@ -83,21 +130,14 @@ The following editable editorial copy is authorized by the user and implemented 
 
 **Introduction:** A selection of research into mountain architecture and tourism, alongside exhibitions, collaborative projects and public-space design.
 
-**Navigation labels:** Explore the research · Selected projects
+The original landing actions were **Explore the research · Selected projects**. The expanded organization provides separate Research and Practice entries while keeping the existing Research anchor compatible.
 
 The current source cover reads `research & projects`, with `portfolio` and `Mária Novotná`. That wording remains in the website wordmark. The implemented opening uses `uvod.webp`, optimized from the supplied `uvod.jpg` collage; that image choice is editorial and does not imply it appeared on the source cover.
 
-## Content held for a later decision
+## Reserved content
 
 | Source pages | Content | Current status |
 |---|---|---|
-| 28–29 | Flaine / Sri Lanka and Capanna Cristallina field studies | Reserve outside the first version unless the user expands the selection. |
-| 30 | Vladimír Dedeček — interpretation of his architecture | Reserve. |
-| 31 | Residential buildings | Reserve. |
-| 32 | Apartment 7-3-to-4 | Reserve. |
-| 33 | House ISB | Reserve. |
-| 34 | Alaš | Reserve. |
-| 35 | Dormitory | Reserve. |
 | 37–38 | Alps/Rockies comparison and USA national parks | Separate and outside the first version, by user decision. |
 | 27, 36 | Closing/separator pages | No independent website project. |
 
@@ -105,8 +145,10 @@ The current source cover reads `research & projects`, with `portfolio` and `Már
 
 Run `npm run dev` from the repository to serve `site/` at `http://127.0.0.1:4317/`. `npm run build` copies the static website into ignored `dist/`; `npm run preview` serves that build at the same default address. The scripts use Node.js built-ins and have no package dependencies.
 
-The supplied image archive has 63 visual assets, plus four font files in the separate font archive. Originals remain in ignored `.source/` staging. The first web asset set contains 34 WebP files: 28 selected archive assets and six individually extracted, approved COOL Nouveau images from export page 24. The WebP conversion preserves aspect ratio, does not crop or enlarge the source, and limits the maximum edge to 2,000 pixels. Some supplied PDF drawings use a rendered first page as their conversion input.
+The supplied image archive has 63 visual assets, plus four font files in the separate font archive. Originals remain in ignored `.source/` staging. The site now contains 54 WebP files plus the separate user-supplied `IMG_0208.jpg` footer portrait. The original 34 WebP files comprise 28 selected archive assets and six individually extracted, approved COOL Nouveau images from export page 24. The expanded sections add 20 visuals from pages 28–35. Conversion preserves aspect ratio, does not enlarge source imagery, and limits the maximum edge to 2,000 pixels. Some supplied PDF drawings use a rendered first page as their conversion input.
 
-Asset provenance and dimensions are recorded in `.source/web-assets-manifest.json`. The COOL extraction is previewed in `.source/contact-sheets/cool-approved-embedded.jpg`. Its images retain the embedded source resolution; matching higher-resolution originals are still absent from `Images.zip`. Other missing originals have not been replaced with embedded substitutes.
+The original `.source/web-assets-manifest.json` remains unchanged. Expanded asset provenance and dimensions are recorded separately in `.source/additional-web-assets-manifest.json`, with a preview at `.source/contact-sheets/additional-projects.jpg`; the JPEG portrait is separate from both manifests. The COOL extraction is previewed in `.source/contact-sheets/cool-approved-embedded.jpg`. Embedded additions are authorized by the latest source-addition task and retain their source resolution.
 
-No contact address, biography or social profile is supplied on the current cover, so the site omits placeholder contact details. Supplied project credits and publication links are included; later copy review can refine their presentation while preserving their source references.
+House ISB uses the clean garden rendering from `PDFsam_merge 74.tif` and clear source plans instead of the defective flat cyan visual. The garden image is visually consistent with the source photographs and plans but remains a candidate association because source-link metadata is unavailable. Missing higher-resolution originals and other export defects remain source-quality issues.
+
+No contact address, biography or social profile is supplied on the current cover. The implemented contact section uses the email supplied later through the user's reference website; the separately supplied portrait appears in the footers. Supplied project credits and publication links are included; later copy review can refine their presentation while preserving their source references.
