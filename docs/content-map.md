@@ -1,10 +1,10 @@
 # Portfolio content map
 
-Content map for the local English website, based on the user's approved Research and Practice grouping and the existing 40-page Affinity export. No fresh Affinity export was obtained for the expanded scope. The implementation is in `site/`; the site has not been deployed.
+Content map for the local English-only website, based on the user's approved Research and Practice grouping and the existing 40-page Affinity export. It has 15 pages and no language options. No fresh Affinity export was obtained for the expanded scope. The implementation is in `site/`; the site has not been deployed.
 
 ## Decisions received
 
-- Use English for the first version.
+- English remains the sole website language by the user's latest instruction, superseding the earlier multilingual direction. Source-supported Slovak, Czech and international subjects and places remain part of its English content and SEO.
 - Draft landing copy from the supplied context, to be adjusted together later.
 - Treat the PhD research as one main project with its own page.
 - The initial five-project slideshow order is historical. The user's latest approval supersedes that selection with separate Research and Practice sections and includes source pages 28–35.
@@ -24,9 +24,10 @@ Content map for the local English website, based on the user's approved Research
 | 3 | Research | 18–22, 24, 28–31 | Seven projects in a manual slideshow at `#selected-projects`. |
 | 4 | Practice | 25–26, 32–35 | Six projects in a separate manual slideshow at `#practice`. |
 | 5 | Selected publications | Related outcomes on 2, 7, 11, 18; citation presentation from the user-referenced website | Four linked publication rows at `#publications`. |
-| 6 | Contact | User-referenced website; absent from the original cover | “Continue the conversation” heading and email draft form at `#contact`. |
+| 6 | CV | User-supplied May 2026 four-page CV | PDF download and collapsible web adaptation at `#cv`, before Contact. |
+| 7 | Contact | User-referenced website; absent from the original cover | “Continue the conversation” heading and email draft form at `#contact`. |
 
-The landing page is implemented at `/`. After the PhD feature at `#research`, the Research slideshow keeps `#selected-projects` for link compatibility. Practice follows at `#practice`, then `#publications` and `#contact`. Each slideshow has direct project selectors and independent Previous/Next controls. Headers on both pages link to the home sections.
+The landing page is implemented at `/`. After the PhD feature at `#research`, the Research slideshow keeps `#selected-projects` for link compatibility. Practice follows at `#practice`, then `#publications`, `#cv` and `#contact`. Each slideshow has direct project selectors and independent Previous/Next controls. Headers on both pages link to the home sections.
 
 | Research order | Project | Source pages |
 |---|---|---|
@@ -89,7 +90,7 @@ Images use automatic dimensions, retain their natural aspect ratios and only sca
 
 Each project uses one slide with selected imagery, concise source-grounded text, metadata and supplied credits. Collaborative teams and contributions remain available under expandable credits. Project imagery uses available archive originals and authorized embedded visuals from export page 24 and pages 28–35. The footer portrait was supplied separately by the user.
 
-Future project routes are recorded in schema version 2 of `project-map.json`, split into `researchProjects` and `practiceProjects`. Their `detailPath` remains null, and the current site has no `More` links to unbuilt pages.
+All thirteen separate Research/Practice routes are implemented in English and recorded in schema version 3 of `project-map.json`. Crawlable project selectors retain their slideshow behavior with JavaScript; View project links lead to full pages. Together with home and the flagship, these make 15 English pages. The latest instruction removes translated routes and language switching.
 
 ## Home publications and contact
 
@@ -116,7 +117,7 @@ The contact form accepts name, email and message, validates required fields and 
 
 Observed source characteristics: white backgrounds, black sans-serif text, substantial empty space, thin table rules, structured research metadata, large photographs, architectural drawings and occasional color within the work itself.
 
-The revised styling uses warm paper tones, muted ink, thin rules, small monospace labels, sans-serif text and selected italic serif emphasis. Spacing and responsive layouts adapt the dense print columns for reading. Styles use the built-in Arial/Helvetica, Courier New and Georgia/Times New Roman font stacks; the supplied source font files remain inventoried separately.
+The revised styling uses warm paper tones, muted ink and thin rules. Typography uses Arial/Helvetica for body text and form inputs, Courier New for the header/footer name and typewriter-style navigation, labels, captions and small controls, and Georgia/Times New Roman for selected italic emphasis. Header and footer names share a regular 16px monospace style with natural letter spacing. Spacing and responsive layouts adapt the dense print columns for reading; the supplied source font files remain inventoried separately.
 
 Implemented slideshow behavior includes manual Previous/Next buttons, current project and count, direct title selection, left/right keyboard navigation, touch swipes in the image area, screen-reader announcements and project hash links. The compact desktop image gallery adds thumbnail selection and an image count. It does not advance automatically. Focus is restored when a project or image change would hide the focused content. The site also has a skip link, visible keyboard focus, mobile navigation and reduced-motion styling. These choices follow [W3C WAI carousel guidance](https://www.w3.org/WAI/tutorials/carousels/).
 
@@ -128,7 +129,7 @@ The following editable editorial copy is authorized by the user and implemented 
 
 **Heading:** Architecture, research & landscapes.
 
-**Introduction:** A selection of research into mountain architecture and tourism, alongside exhibitions, collaborative projects and public-space design.
+**Introduction:** Architectural research and design by Mária Novotná, connecting mountain architecture, modernist heritage and landscape with exhibitions, housing, interiors and public space.
 
 The original landing actions were **Explore the research · Selected projects**. The expanded organization provides separate Research and Practice entries while keeping the existing Research anchor compatible.
 
@@ -143,7 +144,7 @@ The current source cover reads `research & projects`, with `portfolio` and `Már
 
 ## Local development and assets
 
-Run `npm run dev` from the repository to serve `site/` at `http://127.0.0.1:4317/`. `npm run build` copies the static website into ignored `dist/`; `npm run preview` serves that build at the same default address. The scripts use Node.js built-ins and have no package dependencies.
+Run `npm run dev` from the repository to serve `site/` at `http://127.0.0.1:4317/`. `npm run build` recreates ignored `dist/` from the current assets and 15 generated pages, removing stale output without copying retired HTML from `site/`. `npm run preview` serves that build at the same default address. The scripts use Node.js built-ins and have no package dependencies. The [GitHub approval-preview workflow](approval-preview.md) supports the repository subpath and forces noindex while the final domain awaits approval.
 
 The supplied image archive has 63 visual assets, plus four font files in the separate font archive. Originals remain in ignored `.source/` staging. The site now contains 54 WebP files plus the separate user-supplied `IMG_0208.jpg` footer portrait. The original 34 WebP files comprise 28 selected archive assets and six individually extracted, approved COOL Nouveau images from export page 24. The expanded sections add 20 visuals from pages 28–35. Conversion preserves aspect ratio, does not enlarge source imagery, and limits the maximum edge to 2,000 pixels. Some supplied PDF drawings use a rendered first page as their conversion input.
 
@@ -152,3 +153,11 @@ The original `.source/web-assets-manifest.json` remains unchanged. Expanded asse
 House ISB uses the clean garden rendering from `PDFsam_merge 74.tif` and clear source plans instead of the defective flat cyan visual. The garden image is visually consistent with the source photographs and plans but remains a candidate association because source-link metadata is unavailable. Missing higher-resolution originals and other export defects remain source-quality issues.
 
 No contact address, biography or social profile is supplied on the current cover. The implemented contact section uses the email supplied later through the user's reference website; the separately supplied portrait appears in the footers. Supplied project credits and publication links are included; later copy review can refine their presentation while preserving their source references.
+
+## SEO and CV additions
+
+The latest instruction keeps all 15 pages in English, with source-grounded regional context, distinct metadata and structured data. The earlier multilingual direction is superseded; translated pages, language controls, hreflang and language alternates are removed. The public domain is undecided; [SEO setup](seo.md) records configuration, preview noindex and production canonical/sitemap behavior. Regional relevance remains grounded in the supplied projects and CV, without claiming equivalent Slovak/Czech native-language search coverage.
+
+The later editorial cleanup removes the added standalone regional-promotion paragraphs from the hero and Contact. The main introduction, factual project locations and copy, CV, metadata and structured data remain unchanged.
+
+The user supplied `C:/Users/mariu/Desktop/Maria/2026_CV_novotna.pdf` and requested a CV section before Contact. The original English four-page PDF is copied unchanged to the public document assets. The initially collapsed English web version at `#cv` covers the profile, education, research, teaching, practice, funding, projects, academic activities, competitions, publications, methods, skills, memberships and interests. It keeps the May 2026 source date; published titles remain in their original language. Source-supported language skills remain CV facts, including Person.knowsLanguage structured data, rather than website language options.

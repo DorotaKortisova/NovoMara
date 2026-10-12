@@ -13,7 +13,7 @@
 .phd-opening .meta-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 16px; column-gap: 16px; font-size: 11px; }
 .phd-opening .meta-grid > div { display: block; padding-block: 8px; border-bottom: 1px solid var(--rule); }
 .phd-opening .meta-grid dt { margin-bottom: 3px; font-size: 10px; }
-.phd-opening .project-affiliations { margin: 0 0 18px; color: var(--muted); font: 10px/1.6 var(--mono); }
+.phd-opening .project-affiliations { margin: 0 0 18px; color: var(--muted); font: 11px/1.6 var(--mono); }
 .phd-opening-image img { max-height: 380px; object-fit: contain; }
 .research-methods, .related-credits { border-top: 1px solid var(--rule); }
 .research-methods summary, .related-credits summary { min-height: 44px; padding-block: 12px; cursor: pointer; font: 11px/1.6 var(--mono); }

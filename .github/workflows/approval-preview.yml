@@ -1,0 +1,54 @@
+name: Approval preview
+
+on:
+  push:
+    branches: [codex/start]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-approval-preview
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Check portfolio
+        run: npm test
+      - name: Build approval preview
+        run: npm run build
+        env:
+          PREVIEW_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_URL: ''
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish approval preview
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 2,
-  "stage": "local-research-and-practice-portfolio",
+  "schemaVersion": 3,
+  "stage": "local-english-seo-and-cv-portfolio",
   "implementation": {
     "siteDirectory": "site",
     "buildDirectory": "dist",
@@ -10,26 +10,73 @@
     "previewCommand": "npm run preview",
     "defaultLocalUrl": "http://127.0.0.1:4317/",
     "homeSections": [
-      { "id": "research", "label": "Mountain research", "presentation": "flagship-feature" },
-      { "id": "selected-projects", "label": "Research", "presentation": "manual-project-carousel", "legacyAnchorPreserved": true },
-      { "id": "practice", "label": "Practice", "presentation": "manual-project-carousel" },
-      { "id": "publications", "label": "Selected publications", "presentation": "publication-list" },
-      { "id": "contact", "label": "Contact", "presentation": "email-draft-form" }
+      {
+        "id": "research",
+        "label": "Mountain research",
+        "presentation": "flagship-feature"
+      },
+      {
+        "id": "selected-projects",
+        "label": "Research",
+        "presentation": "manual-project-carousel",
+        "legacyAnchorPreserved": true
+      },
+      {
+        "id": "practice",
+        "label": "Practice",
+        "presentation": "manual-project-carousel"
+      },
+      {
+        "id": "publications",
+        "label": "Selected publications",
+        "presentation": "publication-list"
+      },
+      {
+        "id": "cv",
+        "label": "Curriculum vitae",
+        "presentation": "original-pdf-download-and-collapsible-web-version"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "presentation": "email-draft-form"
+      }
     ],
     "coolNouveauImages": {
       "status": "approved-embedded-visuals-implemented",
       "sourcePage": 24,
-      "assetPaths": ["site/assets/images/cool-1.webp", "site/assets/images/cool-2.webp", "site/assets/images/cool-3.webp", "site/assets/images/cool-4.webp", "site/assets/images/cool-5.webp", "site/assets/images/cool-6.webp"],
+      "assetPaths": [
+        "site/assets/images/cool-1.webp",
+        "site/assets/images/cool-2.webp",
+        "site/assets/images/cool-3.webp",
+        "site/assets/images/cool-4.webp",
+        "site/assets/images/cool-5.webp",
+        "site/assets/images/cool-6.webp"
+      ],
       "provenanceManifest": ".source/web-assets-manifest.json"
     },
     "additionalProjectImages": {
-      "sourcePages": [28, 29, 30, 31, 32, 33, 34, 35],
+      "sourcePages": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
       "assetCount": 20,
       "authorization": "The user authorized adding these source projects and reusing their embedded export visuals where archive originals are unavailable.",
       "provenanceManifest": ".source/additional-web-assets-manifest.json",
       "contactSheet": ".source/contact-sheets/additional-projects.jpg",
       "qualityNote": "Use available originals; preserve embedded source resolution and avoid defective placeholders."
-    }
+    },
+    "pageCount": 15,
+    "seoConfig": "content/seo-config.json",
+    "prepareCommand": "npm run prepare",
+    "testCommand": "npm test",
+    "domainStatus": "not-decided-preview-noindex"
   },
   "language": "en",
   "source": {
@@ -42,21 +89,39 @@
   },
   "landing": {
     "path": "/",
-    "sourcePages": [1],
+    "sourcePages": [
+      1
+    ],
     "name": "Mária Novotná",
     "draftCopy": {
       "status": "editable-draft-implemented-authorized-by-user",
       "heading": "Architecture, research & landscapes.",
-      "introduction": "A selection of research into mountain architecture and tourism, alongside exhibitions, collaborative projects and public-space design."
+      "introduction": "Architectural research and design by Mária Novotná, connecting mountain architecture, modernist heritage and landscape with exhibitions, housing, interiors and public space."
     },
     "publications": {
       "anchor": "#publications",
       "citationSource": "User-referenced website; newer saved parent-workspace source tmp/main-sync/src/pages/index.astro.",
       "entries": [
-        { "year": 2025, "title": "The Taming of the Wild", "doi": "10.31261/FLPI.2025.10.16" },
-        { "year": 2023, "title": "Tatras Phoenix: Architecture of Restoration in the Alpine Environment of the High Tatras", "doi": "10.30682/aa2310r" },
-        { "year": 2023, "title": "Alpine Huts: Architectural Innovations and Development in the High Tatras in the Second Half of the 20th Century", "doi": "10.2478/alfa-2023-0005" },
-        { "year": 2022, "title": "The Mountain Lodge Téry Hut: Innovations in Alpine-Zone Architecture", "doi": "10.31577/archandurb.2022.56.1-2.10" }
+        {
+          "year": 2025,
+          "title": "The Taming of the Wild",
+          "doi": "10.31261/FLPI.2025.10.16"
+        },
+        {
+          "year": 2023,
+          "title": "Tatras Phoenix: Architecture of Restoration in the Alpine Environment of the High Tatras",
+          "doi": "10.30682/aa2310r"
+        },
+        {
+          "year": 2023,
+          "title": "Alpine Huts: Architectural Innovations and Development in the High Tatras in the Second Half of the 20th Century",
+          "doi": "10.2478/alfa-2023-0005"
+        },
+        {
+          "year": 2022,
+          "title": "The Mountain Lodge Téry Hut: Innovations in Alpine-Zone Architecture",
+          "doi": "10.31577/archandurb.2022.56.1-2.10"
+        }
       ]
     },
     "contact": {
@@ -64,7 +129,19 @@
       "recipient": "maria.novotna27@gmail.com",
       "behavior": "Opens a mailto draft for review; no backend, automatic sending or storage.",
       "directEmailLinkDisplayed": false,
-      "footerPortrait": { "assetPath": "site/assets/images/IMG_0208.jpg", "presentation": "circular-avatar-beside-name-on-both-pages" }
+      "footerPortrait": {
+        "assetPath": "site/assets/images/IMG_0208.jpg",
+        "presentation": "circular-avatar-beside-name-on-both-pages"
+      }
+    },
+    "cv": {
+      "anchor": "#cv",
+      "webSource": "content/cv.html",
+      "downloadPath": "/assets/documents/2026_CV_novotna.pdf",
+      "sourceDate": "2026-05",
+      "sourcePages": 4,
+      "pdfStatus": "original-user-supplied-file-copied-unchanged",
+      "webStatus": "source-grounded-English-editorial-adaptation"
     }
   },
   "flagship": {
@@ -73,29 +150,111 @@
     "projectAffiliationLine": "Mountain Solitudes / FAD / Innovation in architecture of 20th century in Slovakia",
     "presentation": "dedicated-project-page",
     "path": "/projects/history-of-mountain-hut-architecture/",
-    "sourcePages": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 23, 39, 40],
+    "sourcePages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      23,
+      39,
+      40
+    ],
     "contentsNavigation": {
       "presentation": "sticky-responsive-contents",
-      "anchors": ["#overview", "#history", "#case-studies", "#architecture-in-the-mountains", "#findings", "#reflections-on-architecture", "#publications"]
+      "anchors": [
+        "#overview",
+        "#history",
+        "#case-studies",
+        "#architecture-in-the-mountains",
+        "#findings",
+        "#reflections-on-architecture",
+        "#publications"
+      ]
     },
     "chapters": [
-      { "id": "overview", "label": "Overview", "sourcePages": [2], "presentation": "compact-title-question-metadata-and-landscape-photograph" },
-      { "id": "history", "label": "History, mapping and periodisation", "sourcePages": [3, 4, 5, 6, 39, 40] },
+      {
+        "id": "overview",
+        "label": "Overview",
+        "sourcePages": [
+          2
+        ],
+        "presentation": "compact-title-question-metadata-and-landscape-photograph"
+      },
+      {
+        "id": "history",
+        "label": "History, mapping and periodisation",
+        "sourcePages": [
+          3,
+          4,
+          5,
+          6,
+          39,
+          40
+        ]
+      },
       {
         "id": "case-studies",
         "label": "Case studies",
-        "sourcePages": [7, 8, 9, 10, 11, 12, 13],
+        "sourcePages": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
         "children": [
-          { "id": "tery-hut", "label": "Téry Hut", "sourcePages": [7, 8, 9, 10], "buildingYear": 1899, "researchPeriod": "2020–2022" },
+          {
+            "id": "tery-hut",
+            "label": "Téry Hut",
+            "sourcePages": [
+              7,
+              8,
+              9,
+              10
+            ],
+            "buildingYear": 1899,
+            "researchPeriod": "2020–2022"
+          },
           {
             "id": "contemporary-reflections",
             "label": "Contemporary Reflections",
-            "sourcePages": [11, 12, 13],
+            "sourcePages": [
+              11,
+              12,
+              13
+            ],
             "researchPeriod": "2022–2024",
             "titleNote": "Source also uses Contemporary Reflexions.",
             "children": [
-              { "id": "rysy-hut", "label": "Hut under Mt. Rysy", "sourcePages": [12], "historicalDrawingYear": 1933 },
-              { "id": "sliezsky-dom", "label": "Lodge Silesian House / Sliezsky dom", "sourcePages": [13] }
+              {
+                "id": "rysy-hut",
+                "label": "Hut under Mt. Rysy",
+                "sourcePages": [
+                  12
+                ],
+                "historicalDrawingYear": 1933
+              },
+              {
+                "id": "sliezsky-dom",
+                "label": "Lodge Silesian House / Sliezsky dom",
+                "sourcePages": [
+                  13
+                ]
+              }
             ],
             "dateNote": "The research period does not establish dates for individual renovations."
           }
@@ -104,29 +263,69 @@
       {
         "id": "architecture-in-the-mountains",
         "label": "Comparative analysis",
-        "sourcePages": [14, 15, 16, 17],
+        "sourcePages": [
+          14,
+          15,
+          16,
+          17
+        ],
         "groups": [
-          { "label": "Form and structure", "sourcePages": [14, 15] },
-          { "label": "Spatial layout", "sourcePages": [16] },
-          { "label": "Materials and prefabrication", "sourcePages": [14, 15, 17] }
+          {
+            "label": "Form and structure",
+            "sourcePages": [
+              14,
+              15
+            ]
+          },
+          {
+            "label": "Spatial layout",
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "label": "Materials and prefabrication",
+            "sourcePages": [
+              14,
+              15,
+              17
+            ]
+          }
         ]
       },
       {
         "id": "findings",
         "label": "Findings",
-        "sourcePages": [2, 11, 14, 15, 16, 17],
+        "sourcePages": [
+          2,
+          11,
+          14,
+          15,
+          16,
+          17
+        ],
         "presentation": "three-concise-source-grounded-editorial-adaptations",
-        "themes": ["Environment shapes form", "Isolation shapes construction and use", "Restoration preserves environmental logic"]
+        "themes": [
+          "Environment shapes form",
+          "Isolation shapes construction and use",
+          "Restoration preserves environmental logic"
+        ]
       },
       {
         "id": "reflections-on-architecture",
         "label": "Related discourse",
         "sourceTitle": "Reflection on Architecture",
         "editorialTitle": "Reflections on Architecture",
-        "sourcePages": [23],
+        "sourcePages": [
+          23
+        ],
         "period": "2020–2024",
         "projectDirector": "Henrieta Moravčíková",
-        "contributions": ["Project coordinator", "Teaching assistant", "Co-editor"],
+        "contributions": [
+          "Project coordinator",
+          "Teaching assistant",
+          "Co-editor"
+        ],
         "presentation": "smaller-related-series-section-before-publications",
         "placement": "Related work, grouped under the main project by explicit user decision; no formal thesis association is implied."
       },
@@ -134,18 +333,38 @@
         "id": "publications",
         "label": "Selected publications",
         "sectionLabel": "05 / Research outcomes",
-        "sourcePages": [2, 7, 11],
+        "sourcePages": [
+          2,
+          7,
+          11
+        ],
         "entries": [
-          { "title": "Alpine huts: Architectural innovations and development in the High Tatras until the first half of the 20th century", "doi": "10.2478/alfa-2022-0002" },
-          { "title": "Alpine huts: Architectural innovations and development in the High Tatras in the second half of the 20th century", "doi": "10.2478/alfa-2023-0005" },
-          { "title": "The Mountain Lodge Téry Hut: Innovations in Alpine-Zone Architecture", "doi": "10.31577/archandurb.2022.56.1-2.10" },
-          { "title": "Tatras Phoenix. Restoration Architecture in the alpine environment of the High Tatras", "doi": "10.30682/aa2310r" }
+          {
+            "title": "Alpine huts: Architectural innovations and development in the High Tatras until the first half of the 20th century",
+            "doi": "10.2478/alfa-2022-0002"
+          },
+          {
+            "title": "Alpine huts: Architectural innovations and development in the High Tatras in the second half of the 20th century",
+            "doi": "10.2478/alfa-2023-0005"
+          },
+          {
+            "title": "The Mountain Lodge Téry Hut: Innovations in Alpine-Zone Architecture",
+            "doi": "10.31577/archandurb.2022.56.1-2.10"
+          },
+          {
+            "title": "Tatras Phoenix. Restoration Architecture in the alpine environment of the High Tatras",
+            "doi": "10.30682/aa2310r"
+          }
         ]
       }
     ],
     "dedicatedPublicationsSection": "restored-by-latest-user-instruction-after-related-discourse; home publication list unchanged",
     "dateNote": "Project dates differ from building and study dates. History metadata says 1873–2010 while graphics extend to 2020; this source endpoint discrepancy remains unresolved.",
-    "figureReviewPages": [4, 8, 40]
+    "figureReviewPages": [
+      4,
+      8,
+      40
+    ]
   },
   "researchProjects": [
     {
@@ -153,59 +372,74 @@
       "order": 1,
       "title": "The Valley",
       "projectAffiliationLine": "FAD / SAV / Pre Dolinu / Fulbright visiting research",
-      "sourcePages": [18, 19, 20, 21],
-      "proposedFuturePath": "/projects/the-valley/",
-      "detailPath": null,
-      "sections": ["Research overview", "Held Captive by the Tourism Industry", "Taming of the wild", "Jasná"]
+      "sourcePages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "detailPath": "/projects/the-valley/",
+      "sections": [
+        "Research overview",
+        "Held Captive by the Tourism Industry",
+        "Taming of the wild",
+        "Jasná"
+      ]
     },
     {
       "id": "modernism-revisited-2026",
       "order": 2,
       "title": "Modernism Revisited 2026",
-      "sourcePages": [22],
-      "proposedFuturePath": "/projects/modernism-revisited-2026/",
-      "detailPath": null
+      "sourcePages": [
+        22
+      ],
+      "detailPath": "/projects/modernism-revisited-2026/"
     },
     {
       "id": "cool-nouveau",
       "order": 3,
       "title": "COOL Nouveau",
-      "sourcePages": [24],
-      "proposedFuturePath": "/projects/cool-nouveau/",
-      "detailPath": null
+      "sourcePages": [
+        24
+      ],
+      "detailPath": "/projects/cool-nouveau/"
     },
     {
       "id": "flaine-sri-lanka",
       "order": 4,
       "title": "Flaine / Sri Lanka",
-      "sourcePages": [28],
-      "proposedFuturePath": "/projects/flaine-sri-lanka/",
-      "detailPath": null
+      "sourcePages": [
+        28
+      ],
+      "detailPath": "/projects/flaine-sri-lanka/"
     },
     {
       "id": "capanna-cristallina",
       "order": 5,
       "title": "Capanna Cristallina",
       "sourceTitle": "capanna cristalina",
-      "sourcePages": [29],
-      "proposedFuturePath": "/projects/capanna-cristallina/",
-      "detailPath": null
+      "sourcePages": [
+        29
+      ],
+      "detailPath": "/projects/capanna-cristallina/"
     },
     {
       "id": "vladimir-dedecek",
       "order": 6,
       "title": "Vladimír Dedeček — interpretation of his architecture",
-      "sourcePages": [30],
-      "proposedFuturePath": "/projects/vladimir-dedecek/",
-      "detailPath": null
+      "sourcePages": [
+        30
+      ],
+      "detailPath": "/projects/vladimir-dedecek/"
     },
     {
       "id": "residential-buildings",
       "order": 7,
       "title": "Residential buildings",
-      "sourcePages": [31],
-      "proposedFuturePath": "/projects/residential-buildings/",
-      "detailPath": null
+      "sourcePages": [
+        31
+      ],
+      "detailPath": "/projects/residential-buildings/"
     }
   ],
   "practiceProjects": [
@@ -213,56 +447,74 @@
       "id": "visitors-centre-demanovska-dolina",
       "order": 1,
       "title": "Visitors centre Demänovská dolina",
-      "sourcePages": [25],
-      "proposedFuturePath": "/projects/visitors-centre-demanovska-dolina/",
-      "detailPath": null
+      "sourcePages": [
+        25
+      ],
+      "detailPath": "/projects/visitors-centre-demanovska-dolina/"
     },
     {
       "id": "revitalization-of-a-public-square",
       "order": 2,
       "title": "Revitalization of a public square",
-      "sourcePages": [26],
-      "proposedFuturePath": "/projects/revitalization-of-a-public-square/",
-      "detailPath": null
+      "sourcePages": [
+        26
+      ],
+      "detailPath": "/projects/revitalization-of-a-public-square/"
     },
     {
       "id": "apartment-7-3-to-4",
       "order": 3,
       "title": "Apartment 7-3-to-4",
-      "sourcePages": [32],
-      "proposedFuturePath": "/projects/apartment-7-3-to-4/",
-      "detailPath": null
+      "sourcePages": [
+        32
+      ],
+      "detailPath": "/projects/apartment-7-3-to-4/"
     },
     {
       "id": "house-isb",
       "order": 4,
       "title": "House ISB",
-      "sourcePages": [33],
-      "proposedFuturePath": "/projects/house-isb/",
-      "detailPath": null
+      "sourcePages": [
+        33
+      ],
+      "detailPath": "/projects/house-isb/"
     },
     {
       "id": "alas",
       "order": 5,
       "title": "Alaš",
-      "sourcePages": [34],
-      "proposedFuturePath": "/projects/alas/",
-      "detailPath": null
+      "sourcePages": [
+        34
+      ],
+      "detailPath": "/projects/alas/"
     },
     {
       "id": "dormitory",
       "order": 6,
       "title": "Dormitory",
-      "sourcePages": [35],
-      "proposedFuturePath": "/projects/dormitory/",
-      "detailPath": null
+      "sourcePages": [
+        35
+      ],
+      "detailPath": "/projects/dormitory/"
     }
   ],
   "decisionHistory": [
     "The original five-project slideshow selection was superseded by the user's approval to include pages 28–35 and organize projects into Research and Practice.",
-    "Visitors centre and Public square move to Practice without duplication; the flagship and the exclusion of pages 37–38 remain unchanged."
+    "Visitors centre and Public square move to Practice without duplication; the flagship and the exclusion of pages 37–38 remain unchanged.",
+    "The earlier SEO direction included multilingual versions; the latest explicit English-only instruction supersedes that direction while retaining separate pages for all thirteen Research/Practice projects and source-grounded Slovak, Czech and international regional context.",
+    "The user supplied a May 2026 CV and authorized its download and collapsible web adaptation before Contact.",
+    "The website has 15 English pages with no language options, translated routes, hreflang or language alternates; technical SEO and the original CV download remain. The domain is still undecided and previews remain noindex."
   ],
-  "reservedSourcePages": [37, 38],
-  "separatorSourcePages": [27, 36],
-  "pendingDecisions": []
+  "reservedSourcePages": [
+    37,
+    38
+  ],
+  "separatorSourcePages": [
+    27,
+    36
+  ],
+  "pendingDecisions": [],
+  "languages": [
+    "en"
+  ]
 }

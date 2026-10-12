@@ -5,8 +5,10 @@
   "description": "Mária Novotná — architecture and research portfolio",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/serve.mjs",
+    "prepare": "node scripts/prepare-site.mjs",
+    "dev": "node scripts/prepare-site.mjs && node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
-    "preview": "node scripts/serve.mjs dist"
+    "preview": "node scripts/serve.mjs dist",
+    "test": "node --test scripts/seo.test.mjs scripts/site.test.mjs scripts/build.test.mjs"
   }
 }

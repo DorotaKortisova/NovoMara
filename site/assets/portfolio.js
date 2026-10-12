@@ -3,6 +3,19 @@
   'use strict';
 
   document.documentElement.classList.add('js');
+  const format = (text, variables = {}) => text.replace(/\{(\w+)\}/g, (match, name) => String(variables[name] ?? match));
+
+  const alignInitialSection = () => {
+    if (document.querySelector('[data-research-nav]')) return;
+    let id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); }
+    catch { return; }
+    const target = id ? document.getElementById(id) : null;
+    if (!target?.matches('main > section')) return;
+    // Carousel enhancement changes the page height; align the incoming section
+    // after the browser has finished its initial scroll restoration.
+    requestAnimationFrame(() => requestAnimationFrame(() => target.scrollIntoView({block:'start',behavior:'instant'})));
+  };
 
   const initNavigation = () => {
     const toggle = document.querySelector('[data-menu-toggle]');
@@ -178,14 +191,14 @@
     count.className = 'project-gallery-count';
     const label = document.createElement('span');
     label.className = 'project-gallery-label';
-    label.textContent = 'Images';
+    label.textContent = format('Images');
     const counter = document.createElement('span');
     counter.dataset.projectImageCounter = '';
     count.append(label, counter);
     const selectors = document.createElement('div');
     selectors.className = 'project-image-selectors';
     selectors.setAttribute('role', 'group');
-    selectors.setAttribute('aria-label', `Images in ${title}`);
+    selectors.setAttribute('aria-label', format('Images in {title}', { title }));
     const status = document.createElement('p');
     status.className = 'sr-only';
     status.setAttribute('role', 'status');
@@ -200,7 +213,7 @@
       button.className = 'project-image-selector';
       button.dataset.projectImageSelect = String(index);
       button.setAttribute('aria-controls', figure.id);
-      button.setAttribute('aria-label', `Image ${index + 1} of ${figures.length}: ${source?.alt || title}`);
+      button.setAttribute('aria-label', format('Image {current} of {total}: {alt}', { current: index + 1, total: figures.length, alt: source?.alt || title }));
       if (source) {
         const thumbnail = source.cloneNode();
         thumbnail.alt = '';
@@ -260,7 +273,7 @@
       const focusWasInsideImage = previousFigure.contains(document.activeElement);
       currentImage = (index + figures.length) % figures.length;
       render();
-      if (announce) status.textContent = `${title}. Image ${currentImage + 1} of ${figures.length}. ${figures[currentImage].querySelector('img')?.alt || ''}`;
+      if (announce) status.textContent = format('{title}. Image {current} of {total}. {alt}', { title, current: currentImage + 1, total: figures.length, alt: figures[currentImage].querySelector('img')?.alt || '' });
       if (focusWasInsideImage && previousFigure !== figures[currentImage]) buttons[currentImage].focus({ preventScroll: true });
     };
     buttons.forEach((button, index) => button.addEventListener('click', () => select(index)));
@@ -303,7 +316,7 @@
       hint.hidden = !overflow;
       // Reading clientHeight here measures the final layout after hint changes.
       const moreBelow = details.scrollTop + details.clientHeight < details.scrollHeight - 4;
-      hint.textContent = moreBelow ? 'Scroll for more details ↓' : '↑ More project details above';
+      hint.textContent = format(moreBelow ? 'Scroll for more details ↓' : '↑ More project details above');
     };
     let renderQueued = false;
     const scheduleRender = () => {
@@ -373,10 +386,10 @@
         button.setAttribute('aria-pressed', String(active));
       });
       if (counter) counter.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
-      if (previous) previous.setAttribute('aria-label', `Previous project: ${titleFor(slides[(current - 1 + slides.length) % slides.length])}`);
-      if (next) next.setAttribute('aria-label', `Next project: ${titleFor(slides[(current + 1) % slides.length])}`);
+      if (previous) previous.setAttribute('aria-label', format('Previous project: {title}', { title: titleFor(slides[(current - 1 + slides.length) % slides.length]) }));
+      if (next) next.setAttribute('aria-label', format('Next project: {title}', { title: titleFor(slides[(current + 1) % slides.length]) }));
 
-      if (announce && status) status.textContent = `${titleFor(activeSlide)}. Project ${current + 1} of ${slides.length}.`;
+      if (announce && status) status.textContent = format('{title}. Project {current} of {total}.', { title: titleFor(activeSlide), current: current + 1, total: slides.length });
       if (updateHash) {
         const hash = activeSlide.id || `project-${activeSlide.dataset.projectSlide}`;
         try { window.history.replaceState(null, '', `#${encodeURIComponent(hash)}`); }
@@ -398,8 +411,15 @@
     selectors.forEach((button) => {
       const index = slides.findIndex((slide) => slide.dataset.projectSlide === button.dataset.projectSelect);
       if (index < 0) return;
+      button.setAttribute('role', 'button');
       if (slides[index].id) button.setAttribute('aria-controls', slides[index].id);
       button.addEventListener('click', (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        select(index, { updateHash: true, alignFrame: true });
+      });
+      button.addEventListener('keydown', (event) => {
+        if (event.key !== ' ' || button.tagName !== 'A') return;
         event.preventDefault();
         select(index, { updateHash: true, alignFrame: true });
       });
@@ -468,15 +488,15 @@
     const createDialog = () => {
       dialog = document.createElement('dialog');
       dialog.className = 'image-dialog';
-      dialog.setAttribute('aria-label', 'Enlarged portfolio image');
+      dialog.setAttribute('aria-label', format('Enlarged portfolio image'));
 
       const inner = document.createElement('div');
       inner.className = 'image-dialog-inner';
       const close = document.createElement('button');
       close.className = 'image-dialog-close';
       close.type = 'button';
-      close.textContent = 'Close ×';
-      close.setAttribute('aria-label', 'Close image viewer');
+      close.textContent = format('Close ×');
+      close.setAttribute('aria-label', format('Close image viewer'));
       close.autofocus = true;
       close.addEventListener('click', () => dialog.close());
 
@@ -534,10 +554,10 @@
     });
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      name.setCustomValidity(name.value.trim() ? '' : 'Please enter your name.');
-      message.setCustomValidity(message.value.trim() ? '' : 'Please enter a message.');
+      name.setCustomValidity(name.value.trim() ? '' : format('Please enter your name.'));
+      message.setCustomValidity(message.value.trim() ? '' : format('Please enter a message.'));
       if (!form.reportValidity()) return;
-      const subject = encodeURIComponent(`Portfolio enquiry from ${name.value.trim()}`);
+      const subject = encodeURIComponent(format('Portfolio enquiry from {name}', { name: name.value.trim() }));
       const body = encodeURIComponent(`${message.value.trim()}\n\n${name.value.trim()}\n${email.value.trim()}`);
       window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
     });
@@ -549,6 +569,8 @@
     document.querySelectorAll('[data-project-carousel]').forEach(initCarousel);
     initImageViewer();
     initContactForm();
+    if (document.readyState === 'complete') alignInitialSection();
+    else window.addEventListener('load', alignInitialSection, {once:true});
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
   else init();

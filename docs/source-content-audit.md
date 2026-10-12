@@ -1,6 +1,6 @@
 # Portfolio source content audit
 
-This content classification follows the user's latest approved Research and Practice hierarchy, using the existing 40-page Affinity export as its source. No fresh Affinity export was obtained for this expansion. The website is in English. The user has authorized editable landing copy; factual claims must still remain grounded in the supplied material.
+This content classification follows the user's approved Research and Practice hierarchy, using the existing 40-page Affinity export as its source. No fresh Affinity export was obtained for this expansion. The user's latest instruction keeps the website English-only, superseding the earlier multilingual direction. The user has authorized editable landing copy; factual claims must still remain grounded in the supplied material.
 
 ## Source status
 
@@ -36,7 +36,7 @@ This content classification follows the user's latest approved Research and Prac
 | Flagship subsection | Reflection on Architecture / Reflections on Architecture | 23 | Place within the mountain architecture project as related reflection/discourse material, following the user's instruction that the reflections remain part of that project. Keep its own source topic and metadata distinct from Contemporary Reflections on pages 11–13. |
 | Outside first version | Alps/Rockies comparison and USA national parks | 37–38 | Keep as separate research material, outside the first version, following the user's explicit steering. |
 
-The original five-project selection is preserved as decision history, superseded by the user's approval to include pages 28–35 and organize all included projects into Research and Practice. Research retains `#selected-projects` for compatibility; Practice follows at `#practice`. Visitors centre and Public square appear only in Practice. The flagship remains intact, and only pages 37–38 remain excluded project content by the earlier explicit decision. Future separate pages are planned for the carousel projects, with `detailPath` still null; do not show a functional-looking “More” button until a destination exists.
+The original five-project selection is preserved as decision history, superseded by the user's approval to include pages 28–35 and organize all included projects into Research and Practice. Research retains `#selected-projects` for compatibility; Practice follows at `#practice`. Visitors centre and Public square appear only in Practice. The flagship remains intact, and only pages 37–38 remain excluded project content by the earlier explicit decision. The later SEO work implements separate English pages for every carousel project; detailPath points to a real route, with crawlable selectors and View project links. Home, flagship and thirteen project pages make 15 English pages.
 
 ## Later supplied home content
 
@@ -159,3 +159,11 @@ The expansion adds 20 WebP derivatives from pages 28–35, bringing the site to 
 - Contact details are now supplied through the user's referenced website, and the contact section is implemented. Any further biography or social profiles still require supplied content.
 
 English first, editable landing copy, `History of Mountain Hut Architecture` as the flagship title, inclusion of reflections inside that project, and exclusion of pages 37–38 are settled. The latest Research and Practice organization, inclusion of pages 28–35, dedicated PhD page and source-inspired slideshows are authorized. This audit supports concise source-grounded implementation from the existing export; later proofreading does not block that phase.
+
+## Later SEO and CV source
+
+The user subsequently requested search optimization for every portfolio subject in Slovak, Czech and international contexts, and confirmed that no domain has been chosen. Their latest instruction supersedes the multilingual direction and keeps all 15 pages in English, removing language options and translated routes. Source-supported regional places and subjects remain in the English content, metadata and structured data without inventing offices or markets or claiming equivalent native-language search coverage. Preview output remains noindex until a public origin is configured. Technical preparation and the remaining domain/deployment step are documented in [SEO setup](seo.md).
+
+The subsequent editorial instruction removes the standalone regional-promotion lines added to the hero and Contact. It preserves the approved main introduction, source project locations and descriptions, CV facts, English-only page count and SEO metadata/schema.
+
+The user also supplied `C:/Users/mariu/Desktop/Maria/2026_CV_novotna.pdf` and explicitly requested a public download plus a collapsible web CV before Contact. All four pages were extracted and visually reviewed. The supplied version is dated May 2026. It supports the displayed doctoral/master education, research visits in Denver and Mendrisio, SAV collaboration, teaching and freelance practice, grants, projects, conferences, competition outcomes, publications, memberships, methods, language levels and tools. The English web text remains a concise editorial adaptation; the original PDF remains byte-for-byte unchanged. Source-supported language skills, including Person.knowsLanguage, remain personal CV facts despite the English-only website. Academic activity dates remain source-version statements, rather than independent attendance verification. This later CV source supplements the earlier cover, which did not provide a biography. Reserved portfolio pages 37–38 remain excluded as separate projects.

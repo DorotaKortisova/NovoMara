@@ -6,7 +6,7 @@ Current branch: `codex/start`. Work is local in this checkout, also opened in VS
 
 ## First local website
 
-The English portfolio is implemented as a static website in `site/`. It includes an editable landing page, the dedicated [History of Mountain Hut Architecture page](site/projects/history-of-mountain-hut-architecture/index.html), separate manual Research and Practice slideshows, and home publications and contact sections. Research has seven projects; Practice has six, including the four projects from source pages 32–35. The site remains local; deployment has not started.
+The portfolio is implemented as an English-only static website in `site/`, with 15 pages and no language selector. It includes an editable landing page, the dedicated [History of Mountain Hut Architecture page](site/projects/history-of-mountain-hut-architecture/index.html), separate manual Research and Practice slideshows, thirteen individual project pages, and home publications, downloadable/collapsible CV and contact sections. Research has seven projects; Practice has six, including the four projects from source pages 32–35. The site remains local; deployment has not started.
 
 With Node.js and npm available, run these commands from this checkout:
 
@@ -21,11 +21,15 @@ npm run build
 npm run preview
 ```
 
-`build` copies the static site to ignored `dist/`; `preview` serves that copy at the same default address. Run one server at a time on a given port. There are no package dependencies to install. The direct equivalents are `node scripts/serve.mjs`, `node scripts/build.mjs`, and `node scripts/serve.mjs dist`.
+`build` recreates ignored `dist/`, copies the current assets and regenerates all 15 English pages and SEO. Obsolete generated source pages are excluded from the build; source files remain intact. `preview` serves that build at the same default address. Run one server at a time on a given port. There are no package dependencies to install. The direct equivalents are `node scripts/serve.mjs`, `node scripts/build.mjs`, and `node scripts/serve.mjs dist`.
+
+## GitHub approval preview
+
+The prepared [approval workflow](.github/workflows/approval-preview.yml) tests, builds and deploys GitHub Pages on pushes to `codex/start`. Enable **Settings → Pages → Source → GitHub Actions** in the existing GitHub repository, then commit and push the changes. The expected approval URL is `https://dorotakortisova.github.io/NovoMara/`; it is not live until a successful deployment. It needs no custom domain. The build supports the repository path for navigation, project pages, images and the CV download, and explicitly retains `noindex` for this approval version. The link is public, with indexing discouraged by its page metadata. See [approval-preview setup](docs/approval-preview.md) for the steps and a local equivalent.
 
 ## Presentation and interaction
 
-The revised styling uses warm paper tones, thin rules, monospace labels, sans-serif text and selected italic serif emphasis. Typography uses the built-in Arial/Helvetica, Courier New and Georgia/Times New Roman font stacks.
+The revised styling uses warm paper tones and thin rules. Arial/Helvetica provides body text; Courier New provides the header/footer name and typewriter-style navigation, labels, captions and small controls; Georgia/Times New Roman provides selected italic emphasis. The name uses a regular 16px weight with natural letter spacing. These built-in font stacks deliver no font files to visitors.
 
 The PhD page opens with a compact overview combining its title, short public research question, metadata and landscape photograph; the full source question and methods are expandable. Sticky contents provide seven links: Overview, History, Case studies, Comparative analysis, Findings, Related discourse and Selected publications. Case studies retain Téry Hut and the Contemporary Reflections group, with separate Rysy and Sliezsky dom subsections. Comparisons are organized around form and structure, spatial layout, and materials and prefabrication. Three concise source-grounded findings precede a smaller related lecture-series section with its visible period and expandable roles, dates and credits. All 14 existing project images are preserved; the footer avatar is separate. The user's latest instruction restores the dedicated four-publication list after Related discourse; the home list is unchanged.
 
@@ -33,7 +37,7 @@ At widths of at least 900px and heights of at least 580px, both project slidesho
 
 Project images retain their natural aspect ratios and only scale down to fit their available space, including thumbnails and the image viewer. Small COOL Nouveau visuals retain their intrinsic size limits. The footer portrait uses a circular display crop; its source image is unchanged. Project selection stays manual, with direct selectors, keyboard controls and touch gestures.
 
-After the flagship feature, Research retains the `#selected-projects` anchor for existing links; Practice follows at `#practice`. The home `#publications` section follows Practice and lists four publications from the user's referenced website: The Taming of the Wild (2025), Tatras Phoenix (2023), Alpine Huts on the second half of the twentieth century (2023), and the Téry Hut study (2022). The following `#contact` section contains the “Continue the conversation” heading and an email draft form addressed to `maria.novotna27@gmail.com`; the recipient is not displayed as a direct contact link. The form opens the user's email application through `mailto`; it has no backend, automatic sending or storage. Headers on both pages link to the home sections. A small circular portrait from `IMG_0208.jpg` appears beside Mária's name in both page footers.
+After the flagship feature, Research retains the `#selected-projects` anchor for existing links; Practice follows at `#practice`. The home `#publications` section follows Practice and lists four publications from the user's referenced website: The Taming of the Wild (2025), Tatras Phoenix (2023), Alpine Huts on the second half of the twentieth century (2023), and the Téry Hut study (2022). The `#cv` section follows publications with the original four-page May 2026 PDF and a collapsible web adaptation. The following `#contact` section contains the “Continue the conversation” heading and an email draft form addressed to `maria.novotna27@gmail.com`; the temporary test recipient has been removed. The recipient is not displayed as a direct contact link. The form opens the user's email application through `mailto`; it has no backend, automatic sending or storage. Headers on both pages link to the home sections. A small circular portrait from `IMG_0208.jpg` appears beside Mária's name in both page footers.
 
 ## Editing and content references
 
@@ -42,13 +46,19 @@ After the flagship feature, Research retains the `#selected-projects` anchor for
 - Shared presentation: [styles](site/assets/styles.css) and [interaction script](site/assets/portfolio.js).
 - PhD-page presentation: [research styles](site/assets/research.css), loaded only on the dedicated page.
 - Web images: `site/assets/images/`.
+- CV web content: `content/cv.html`; original download: `site/assets/documents/2026_CV_novotna.pdf`.
+- Public-origin configuration: `content/seo-config.json`.
+- [SEO setup, generation and domain activation](docs/seo.md).
+
+Run `npm run prepare` after edits to refresh local project pages, and `npm test` for the SEO/link/download checks. The domain is undecided: previews stay noindex and canonical/sitemap output activates when a public HTTPS origin is configured. Page metadata, structured data and source-grounded Slovak, Czech and international regional context remain. No deployment or Search Console submission has been performed.
 
 - [Content map and website direction](docs/content-map.md)
 - [Detailed source audit](docs/source-content-audit.md)
 - [Project structure](docs/project-map.json)
 - [Original asset mapping](docs/asset-map.json)
+- [Website and CV font licensing review](docs/licensing-review.md)
 
-The content documents preserve source references and decision history. The user's latest approval supersedes the original five-project selection: pages 28–31 join Research, pages 32–35 join Practice, and Visitors centre and Public square move to Practice without duplicates. Only pages 37–38 remain reserved by the earlier explicit exclusion. Future separate project pages remain planned; their `More` links will be added when those pages exist.
+The content documents preserve source references and decision history. The expanded selection supersedes the original five-project selection: pages 28–31 join Research, pages 32–35 join Practice, and Visitors centre and Public square move to Practice without duplicates. Only pages 37–38 remain reserved by the earlier explicit exclusion. All thirteen Research/Practice projects have separate English pages and crawlable selectors plus View project links. The user's latest English-only instruction supersedes the earlier multilingual direction; language controls, translated routes and language alternates are removed while the CV and technical SEO remain.
 
 ## Sources
 
